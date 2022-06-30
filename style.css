@@ -23,7 +23,7 @@ body {
   background: #3c3a39;
   display: flex;
   align-items: center;
-  justify-content: space-between;   
+  justify-content: space-between;
   width: 330px;
   height: 92px;
   padding-top: 48px;
@@ -51,7 +51,7 @@ body {
   gap: 12px;
   width: 375px;
   height: 590px;
-  left: 0px;
+  left: 0;
   top: 92px;
 }
 
@@ -92,7 +92,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
 }
 
 .social_media_logo {
