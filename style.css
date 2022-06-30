@@ -1,8 +1,4 @@
 body {
-  background: #1c1a19;
-  background-image: url("images/Illustration.png");
-  background-repeat: no-repeat;
-  background-position: 230px 320px;
   width: 375px;
   height: 682px;
   box-sizing: border-box;
@@ -17,6 +13,10 @@ body {
   padding: 0;
   width: 375px;
   height: 682px;
+  background: #1c1a19;
+  background-image: url("images/Illustration.png");
+  background-repeat: no-repeat;
+  background-position: 230px 320px;
 }
 
 .header {
@@ -98,4 +98,113 @@ body {
 .social_media_logo {
   flex: 1;
   padding: 12px;
+}
+
+.container-2 {
+  display:grid;
+  width: 375px;
+}
+
+.recent-works-title {
+  color: #1c1a19;
+  width: 327px;
+  height: 83px;
+  font-family:'Crete Round', Serif;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+}
+
+.recent-works-supporting-text {
+  color: #091e42;
+  width: 327px;
+  height: 36px;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.recent-works-description {
+  color: #091e42;
+  width: 327px;
+  height: 147px;
+  font-family: 'Inter', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.recent-works-techs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 297px;
+}
+
+.recent-works-tech-items {
+  color: #091e42;
+  height: 20px;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.recent-works-button {
+  color: #fff;
+  width: 124px;
+  height: 48px;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.card-works-title {
+  color: #fff;
+  width: 295px;
+  height: 81px;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.card-works-description {
+  color: #fff;
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.card-works-tech-items {
+  color: #fff;
+  height: 20px;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.card-works-button {
+  color: #fff;
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+
+/*images styling section, display*/
+
+.card-works {
+  background-image: url("images/card_works_background.png");
+  background-repeat: no-repeat;
+  gap: 24px;
 }
