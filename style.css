@@ -105,12 +105,12 @@ body {
   width: 375px;
 }
 
-.recent-works, .card-works {
+.recent-works {
   display: flex;
   width: 375px;
   flex-direction: column;
   margin-left: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .recent-works-title {
@@ -161,6 +161,13 @@ body {
   letter-spacing: 0.75px;
 }
 
+.card-works {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
 .card-works-title {
   color: #fff;
   width: 295px;
@@ -198,7 +205,7 @@ body {
   letter-spacing: 0.75px;
 }
 
-.card-works-tech, .recent-works-tech {
+.card-works-tech {
   display: flex;
   justify-content: flex-start;
   gap: 12px;
@@ -229,6 +236,12 @@ body {
   padding-bottom: 10px;
 }
 
+.recent-works-tech {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  height: 40px;
+}
 .recent-works-tech-items {
   padding: 10px 12px 10px 12px;
   list-style: none;
@@ -272,6 +285,13 @@ body {
   height: 48px;
 }
 
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  margin-top: 120px;
+}
+
 .about-me-title {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -288,7 +308,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
 }
 
 .about-me-button {
@@ -300,6 +319,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+
 .skill {
   color: #fff;
   font-family: 'Inter', serif;
@@ -308,24 +328,31 @@ body {
   font-weight: 400;
 }
 
-.language, .frameworks, .skill-list {
+.language {
   color: #fff;
   font-family: 'Inter', serif;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
+  list-style-image: url("images/Rectangle_55.svg");
 }
 
-.container-3 {
-  display: flex;
-  flex-direction: column;
-  background-color: #1c1a19;
-  margin-top: 120px;
+.frameworks {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  list-style-image: url("images/Rectangle_56.svg");
 }
 
-.about-me, .skills {
-  display: flex;
-  flex-direction: column;
+.skill-list {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  list-style-image: url("images/Rectangle_57.svg");
 }
 
 .about-me {
@@ -373,16 +400,4 @@ body {
   flex-direction: column;
   list-style: none;
   text-align: center;
-}
-
-.language {
-  list-style-image: url("images/Rectangle_55.svg");
-}
-
-.frameworks {
-  list-style-image: url("images/Rectangle_56.svg");
-}
-
-.skill-list {
-  list-style-image: url("images/Rectangle_57.svg");
 }
