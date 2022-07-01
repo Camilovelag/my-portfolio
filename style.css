@@ -9,27 +9,21 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   width: 375px;
   height: 682px;
   background: #1c1a19;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
-  background-position: 230px 320px;
+  background-position: 228px 318px;
 }
 
 .header {
   background: #3c3a39;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 330px;
+  align-items: flex-end;
+  width: 375px;
   height: 92px;
-  padding-top: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 12px;
 }
 
 .logo {
@@ -41,21 +35,24 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  position: relative;
+  bottom: 12px;
+  left: 24px;
+}
+
+.nav-button {
+  position: relative;
+  right: 36px;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 120px 24px 120px 24px;
-  gap: 12px;
   width: 375px;
   height: 590px;
-  left: 0;
-  top: 92px;
 }
 
-.primary_text {
+.primary-text {
   color: #ff6b00;
   width: 327px;
   height: 124px;
@@ -64,6 +61,9 @@ body {
   letter-spacing: 0.37px;
   line-height: 64px;
   font-weight: 400;
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .supporting_text {
@@ -74,6 +74,9 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .description {
@@ -84,20 +87,26 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .social_media {
-  width: 150px;
+  width: 200px;
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
-.social_media_logo {
-  flex: 1;
-  padding: 12px;
+.social-media-icon {
+  list-style-type: none;
 }
 
 .container-2 {
