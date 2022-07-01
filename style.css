@@ -100,6 +100,8 @@ body {
   padding: 12px;
 }
 
+/*Day 4 project section*/
+
 .container-2 {
   display:grid;
   width: 375px;
@@ -133,18 +135,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-}
-
-.recent-works-techs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 297px;
+  text-align: justify;
 }
 
 .recent-works-tech-items {
   color: #091e42;
-  height: 20px;
   font-family: 'Inter', serif;
   font-size: 15px;
   line-height: 20px;
@@ -159,6 +154,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  letter-spacing: 0.75px;
 }
 
 .card-works-title {
@@ -183,7 +179,6 @@ body {
 
 .card-works-tech-items {
   color: #fff;
-  height: 20px;
   font-family: 'Inter', serif;
   font-size: 15px;
   line-height: 20px;
@@ -198,13 +193,83 @@ body {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  letter-spacing: 0.75px;
 }
 
 
 /*images styling section, display*/
 
+.card-works-title, .card-works-description, .recent-works-button, 
+.recent-works-description, .recent-works-supporting-text, .recent-works-title, 
+.img-placeholder {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.card-works-tech, .recent-works-tech {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  height: 40px;
+}
+
+.recent-works {
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.recent-works-title {
+  margin-top: 120px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #212121;
+}
+
+.img-placeholder {
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
+.recent-works-supporting-text {
+  margin-top: 24px;
+}
+
+.recent-works-description {
+  padding-bottom: 10px;
+}
+
+.recent-works-tech-items {
+  padding: 10px 12px 10px 12px;
+  list-style: none;
+  border: 1px solid #8993A4;
+}
+
+.recent-works-button {
+  background: #ff6b00;
+  border-style: none;
+}
+
 .card-works {
   background-image: url("images/card_works_background.png");
   background-repeat: no-repeat;
-  gap: 24px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.card-works-title {
+  margin-top: 84px;
+}
+
+.card-works-description {
+  margin-top: 12px;
+}
+
+.card-works-tech-items {
+  padding: 10px 12px 10px 12px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.card-works-button {
+  background: #ff6b00;
+  border-style: none;
 }
