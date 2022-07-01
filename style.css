@@ -130,6 +130,8 @@ body {
 .img-placeholder {
   padding-top: 80px;
   padding-bottom: 0;
+  width: 327px;
+  height: 237px;
 }
 
 .recent-works-supporting-text {
@@ -152,7 +154,8 @@ body {
   line-height: 24px;
   font-weight: 400;
   text-align: justify;
-  padding-bottom: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .recent-works-tech {
@@ -160,6 +163,7 @@ body {
   justify-content: flex-start;
   gap: 12px;
   height: 40px;
+  padding-left: 0px;
 }
 
 .recent-works-tech-items {
@@ -184,6 +188,23 @@ body {
   border-style: none;
   width: 124px;
   height: 48px;
+}
+
+.recent-works-button:hover {
+  background-color: #f6e6cb;
+  color:#ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.recent-works-button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  border-style: none;
+}
+
+.card-works-button:disabled {
+  background-color: rgb(210, 207, 207);
+  color:rgb(78, 77, 77);
 }
 
 .card-works {
@@ -226,6 +247,7 @@ body {
   justify-content: flex-start;
   gap: 12px;
   height: 40px;
+  padding-left: 16px;
 }
 
 .card-works-tech-items {
@@ -252,6 +274,23 @@ body {
   height: 48px;
 }
 
+.card-works-button:hover {
+  background-color: #f6e6cb;
+  color:#ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.card-works-button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  border-style: none;
+}
+
+.card-works-button:disabled {
+  background-color: rgb(210, 207, 207);
+  color:rgb(78, 77, 77);
+}
+
 .container-3 {
   display: flex;
   flex-direction: column;
@@ -276,6 +315,7 @@ body {
   font-size: 72px;
   letter-spacing: 0.37px;
   line-height: 88px;
+  font-weight: 400px;
   margin-top: 120px;
   width: 327px;
   height: 79px;
@@ -295,7 +335,7 @@ body {
 .about-me-button {
   color: #fff;
   font-family: 'Inter', serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 0.75px;
@@ -304,6 +344,23 @@ body {
   background: #ff6b00;
   padding: 12px;
   border-style: none;
+}
+
+.about-me-button:hover {
+  background-color: #f6e6cb;
+  color:#ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.about-me-button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  border-style: none;
+}
+
+.about-me-button:disabled {
+  background-color: rgb(210, 207, 207);
+  color:rgb(78, 77, 77);
 }
 
 .skills {
@@ -340,6 +397,13 @@ body {
   list-style-image: url("images/Rectangle_57.svg");
 }
 
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+
 .skill {
   color: #fff;
   font-family: 'Inter', serif;
@@ -350,4 +414,5 @@ body {
   flex-direction: column;
   list-style: none;
   text-align: center;
+  margin-top: 32px;
 }
