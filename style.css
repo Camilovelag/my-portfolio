@@ -20,8 +20,8 @@ body {
 .header {
   background: #3c3a39;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-end;
   width: 375px;
   height: 92px;
 }
@@ -35,8 +35,14 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-bottom: 12px;
-  margin-left: 24px;
+  position: relative;
+  bottom: 12px;
+  left: 24px;
+}
+
+.nav-button{
+  position: relative;
+  right: 36px;
 }
 
 .headline {
@@ -46,21 +52,18 @@ body {
   height: 590px;
 }
 
-.normal-button{
-  margin-right: 36px;
-}
-
 .primary-text {
   color: #ff6b00;
   width: 327px;
   height: 124px;
   font-family: 'Crete Round', serif;
-  font-size: 34px;
+  font-size: 56px;
   letter-spacing: 0.37px;
   line-height: 64px;
   font-weight: 400;
   margin-top: 120px;
   margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .supporting_text {
@@ -71,6 +74,9 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .description {
@@ -81,20 +87,26 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .social_media {
-  width: 150px;
+  width: 200px;
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
-.social_media_logo {
-  flex: 1;
-  padding: 12px;
+.social-media-icon {
+  list-style-type: none;
 }
 
 .container-2 {
