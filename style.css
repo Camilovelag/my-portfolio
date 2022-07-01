@@ -103,8 +103,14 @@ body {
 /*Day 4 project section*/
 
 .container-2 {
-  display:grid;
+  display: grid;
   width: 375px;
+}
+
+.recent-works, .card-works {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
 }
 
 .recent-works-title {
@@ -148,8 +154,6 @@ body {
 
 .recent-works-button {
   color: #fff;
-  width: 124px;
-  height: 48px;
   font-family: 'Inter', serif;
   font-size: 17px;
   line-height: 24px;
@@ -187,8 +191,6 @@ body {
 
 .card-works-button {
   color: #fff;
-  width: 327px;
-  height: 48px;
   font-family: 'Inter', serif;
   font-size: 17px;
   line-height: 24px;
@@ -246,6 +248,8 @@ body {
 .recent-works-button {
   background: #ff6b00;
   border-style: none;
+  width: 124px;
+  height: 48px;
 }
 
 .card-works {
@@ -272,4 +276,127 @@ body {
 .card-works-button {
   background: #ff6b00;
   border-style: none;
+  width: 327px;
+  height: 48px;
+}
+
+/*about me section*/
+
+/*text styling*/
+
+.about-me-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  letter-spacing: 0.37px;
+  line-height: 88px;
+  font-weight: 400;
+}
+
+.about-me-description {
+  color: #fff;
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+}
+
+.about-me-button {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.skill {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 22px;
+  line-height: 43px;
+  font-weight: 400;
+}
+
+.language, .frameworks, .skill-list {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+
+
+
+/*images styling section, display*/
+
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  margin-top: 120px;
+}
+
+.about-me, .skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 190px;
+  margin-left: 24px;
+  background-image: url("images/Frame.png");
+  background-repeat: no-repeat;
+  background-position: 100% 95%;
+}
+
+.about-me-title {
+  margin-top: 120px;
+  width: 327px;
+  height: 79px;
+}
+
+.about-me-description {
+  margin-top: -24px;
+  width: 327px;
+  height: 148px;
+}
+
+.about-me-button {
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  padding: 12px;
+  border-style: none;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+}
+
+.language {
+  list-style-image: url("images/Rectangle_55.svg");
+}
+
+.frameworks {
+  list-style-image: url("images/Rectangle_56.svg");
+}
+
+.skill-list {
+  list-style-image: url("images/Rectangle_57.svg");
 }
