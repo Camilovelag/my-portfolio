@@ -100,7 +100,7 @@ body {
   padding: 12px;
 }
 
-/*Day 4 project section*/
+/* Day 4 project section */
 
 .container-2 {
   display: grid;
@@ -199,7 +199,7 @@ body {
 }
 
 
-/*images styling section, display*/
+/* images styling section, display */
 
 .card-works-title, .card-works-description, .recent-works-button, 
 .recent-works-description, .recent-works-supporting-text, .recent-works-title, 
@@ -280,9 +280,9 @@ body {
   height: 48px;
 }
 
-/*about me section*/
+/* about me section */
 
-/*text styling*/
+/* text styling */
 
 .about-me-title {
   color: #ff6b00;
@@ -329,10 +329,7 @@ body {
   font-weight: 700;
 }
 
-
-
-
-/*images styling section, display*/
+/* images styling section, display */
 
 .container-3 {
   display: flex;
