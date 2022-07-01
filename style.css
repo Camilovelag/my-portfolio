@@ -100,8 +100,6 @@ body {
   padding: 12px;
 }
 
-/* Day 4 project section */
-
 .container-2 {
   display: grid;
   width: 375px;
@@ -198,9 +196,6 @@ body {
   letter-spacing: 0.75px;
 }
 
-
-/* images styling section, display */
-
 .card-works-title, .card-works-description, .recent-works-button, 
 .recent-works-description, .recent-works-supporting-text, .recent-works-title, 
 .img-placeholder {
@@ -280,10 +275,6 @@ body {
   height: 48px;
 }
 
-/* about me section */
-
-/* text styling */
-
 .about-me-title {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -328,8 +319,6 @@ body {
   line-height: 44px;
   font-weight: 700;
 }
-
-/* images styling section, display */
 
 .container-3 {
   display: flex;
