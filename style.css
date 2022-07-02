@@ -172,7 +172,7 @@ body {
   justify-content: flex-start;
   gap: 12px;
   height: 40px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .recent-works-tech-items {
@@ -201,7 +201,7 @@ body {
 
 .recent-works-button:hover {
   background-color: #f6e6cb;
-  color:#ff6b00;
+  color: #ff6b00;
   border: 1px solid #ff6b00;
 }
 
@@ -211,9 +211,9 @@ body {
   border-style: none;
 }
 
-.card-works-button:disabled {
+.recent-works-button:disabled {
   background-color: rgb(210, 207, 207);
-  color:rgb(78, 77, 77);
+  color: rgb(78, 77, 77);
 }
 
 .card-works {
@@ -285,7 +285,7 @@ body {
 
 .card-works-button:hover {
   background-color: #f6e6cb;
-  color:#ff6b00;
+  color: #ff6b00;
   border: 1px solid #ff6b00;
 }
 
@@ -297,7 +297,7 @@ body {
 
 .card-works-button:disabled {
   background-color: rgb(210, 207, 207);
-  color:rgb(78, 77, 77);
+  color: rgb(78, 77, 77);
 }
 
 .container-3 {
@@ -357,7 +357,7 @@ body {
 
 .about-me-button:hover {
   background-color: #f6e6cb;
-  color:#ff6b00;
+  color: #ff6b00;
   border: 1px solid #ff6b00;
 }
 
@@ -369,7 +369,7 @@ body {
 
 .about-me-button:disabled {
   background-color: rgb(210, 207, 207);
-  color:rgb(78, 77, 77);
+  color: rgb(78, 77, 77);
 }
 
 .skills {
