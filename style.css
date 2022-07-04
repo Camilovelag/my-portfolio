@@ -251,14 +251,16 @@ body {
   margin-left: 16px;
 }
 
-.card-works-tech {
+/* Using flex to style the list items */
+/* .card-works-tech {
   display: flex;
   justify-content: flex-start;
   gap: 12px;
   height: 40px;
   padding-left: 16px;
-}
+} */
 
+/* Using Floats to style the list items */
 .card-works-tech-items {
   color: #fff;
   font-family: 'Inter', serif;
@@ -266,8 +268,11 @@ body {
   line-height: 20px;
   font-weight: 500;
   padding: 10px 12px 10px 12px;
+  margin-right: 10px;
+  /* margin-left: 10px; */
   list-style: none;
   background: rgba(255, 255, 255, 0.24);
+  float: left;
 }
 
 .card-works-button {
