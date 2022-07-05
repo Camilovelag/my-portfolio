@@ -8,7 +8,7 @@
   <title>Camilo Vela Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="container">
@@ -162,20 +162,20 @@
     </div>
   </section>
   <section class="container-4">
-    <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
-    <form action="" method="post">
-      <ul>
-        <li>
-          <input type="text" id="name" name="username" placeholder="Full Name" required maxlength="30">
+    <h1 class="contact-us-description">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+    <form class="form" action="" method="post">
+      <ul class="contact-us-list">
+        <li class="contact-us-name">
+          <input class="full-name" type="text" id="name" name="username" placeholder="Full Name" required maxlength="30">
         </li>
-        <li>
-          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <li class="contact-us-email">
+          <input class="email" type="email" id="email" name="email" placeholder="Email Address" required>
         </li>
-        <li>
-          <textarea name="message" id="textarea" maxlength="500" required>Enter text here</textarea>
+        <li class="contact-us-text-area">
+          <textarea class="text-area" name="message" id="textarea" maxlength="500" required>Enter text here</textarea>
         </li>
-        <li class="button-list">
-          <button type="submit" class="btn">Get in touch</button>
+        <li class="contact-us-list-item">
+          <button type="submit" class="contact-us-button">Get in touch</button>
         </li>
       </ul>
     </form>
