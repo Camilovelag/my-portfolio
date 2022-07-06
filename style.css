@@ -536,7 +536,8 @@ body {
 
 .footer-icons {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-bottom: 38px;
 }
 
 .footer-links {
