@@ -540,6 +540,5 @@ body {
 }
 
 .footer-links {
-  /* justify-content: center; */
   filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
 }
