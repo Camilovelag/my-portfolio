@@ -600,12 +600,12 @@ body {
 
   .social_media {
     order: -1;
-    flex: 1 0 162px;
+    flex: 1 0 200px;
     width: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 297px 88px 341px 36px;
+    margin: 279px 88px 341px 36px;
   }
   
   .primary-text {
@@ -641,8 +641,78 @@ body {
     top: 496px;
     left: 143px;
   }
+  /* REEEECENT WORKS */
+  .container-2 {
+    width: 1440px;
+    margin: 135px 118px 130px;
+  }
   
+  .recent-works {
+    width: 1440px;
+    height: 630px;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
   
+  .recent-works-title {
+    color: #091e42;
+    width: 315px;
+    height: 52px;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    border-style: none;
+  }
+  
+  .img-placeholder {
+    padding: 0;
+    width: 680px;
+    height: 443px;
+    margin: 114px 0 0;
+  }
+  
+  .recent-works-supporting-text {
+    color: #091e42;
+    width: 448px;
+    height: 48px;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 400;
+  }
+  
+  .recent-works-description {
+    color: #091e42;
+    width: 327px;
+    height: 147px;
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: justify;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .recent-works-tech {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    height: 40px;
+    padding-left: 0;
+  }
+  
+  .recent-works-tech-items {
+    color: #091e42;
+    font-family: 'Inter', serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 10px 12px 10px 12px;
+    list-style: none;
+    border: 1px solid #8993a4;
+  }
 
 
 
