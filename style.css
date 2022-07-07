@@ -307,7 +307,7 @@ body {
 }
 
 .about-me {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   padding-bottom: 190px;
   margin-left: 24px;
   background-image: url("images/Frame.png");
@@ -637,7 +637,6 @@ body {
     font-weight: 400;
     margin: 24px 0 0;
   }
-  /* REEEECENT WORKS */
   .container-2 {
     width: 1204px;
     margin: 135px 118px 130px;
@@ -697,6 +696,62 @@ body {
   .recent-works-button {
     margin: 24px 0 0 24px;
   }
+
+/* working cards */
+
+/* end of working cards */
+
+
+/* about me */
+
+.container-3 {
+  width: 1440px;
+  height: 1195px;
+  background-color: #262626;
+  margin-top: 120px;
+  background-image: url("images/Frame_desktop.png");
+  background-repeat: no-repeat;
+  background-position: 854px 99px;
+}
+
+.about-me {
+  padding-bottom: 151px;
+  margin: 131px 142px 0;
+  background-image: none;
+}
+
+.about-me-title {
+  color: #f55800;
+  font-family: 'Crete Round', serif;
+  line-height: 82px;
+  margin: 0;
+  width: 566px;
+  height: 78px;
+}
+
+.about-me-description {
+  color: #f4f5f7;
+  font-family: 'Inter', serif;
+  font-size: 20px;
+  line-height: 32px;
+  width: 566px;
+  height: 148px;
+  margin: 24px 0 0;
+}
+
+.about-me-button {
+  letter-spacing: 0.03em;
+  margin: 24px 0 0;
+  background: #f55800;
+}
+
+
+
+/* footer */
+
+
+
+
 
 
 
