@@ -558,6 +558,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     width: 1440px;
+    height: 4561px;
   }
   
   .container {
@@ -770,4 +771,82 @@ body {
 
 
 /* footer */
+
+
+.contact-us {
+  width: 1440px;
+  height: 686px;
+  margin: 0;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1163px;
+  height: 614px;
+  padding: 130px 142px 226px 135px;
+  justify-content: space-between;
+}
+
+.contact-us-description {
+  color: #262626;
+  font-size: 40px;
+  line-height: 52px;
+  width: 420px;
+  height: 256px;
+  margin: 0;
+  text-align: left;
+}
+
+.contact-us-list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  width: 684px;
+}
+
+/* .contact-us-name {
+  color: #979493;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #dbd8d7;
+  width: 295px;
+  padding: 14px;
+  margin: 0 24px 0 24px;
+  list-style: none;
+} */
+
+.contact-us-email {
+  width: 684px;
+  margin: 0;
+}
+
+.text-area {
+  font-family: 'Roboto', serif;
+  width: 684px;
+  height: 114px;
+  margin: 24px 24px 24px 0;
+}
+
+.contact-us-text-area {
+  list-style-type: none;
+}
+
+.contact-us-list-item{
+  list-style-type: none;
+}
+
+.contact-us-button {
+  color: #fff;
+  font-family: 'Roboto', serif;
+  background: #f55800;
+  padding: 12px;
+  position: absolute;
+  left: 614px;
+
+
+
+  
 }
