@@ -66,7 +66,7 @@ body {
   margin-bottom: 0;
 }
 
-.supporting_text {
+.supporting-text {
   color: #fff5e1;
   width: 327px;
   height: 27px;
@@ -540,6 +540,110 @@ body {
   margin-bottom: 38px;
 }
 
-.footer-links {
-  filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
+.social-media_footer {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 24px;
+    margin-bottom: 0;
+    list-style-type: none;
+    filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 1440px;
+  }
+  
+  .container {
+    width: 1440px;
+    height: 870px;
+    background-image: url("images/Illustration-header.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1440px;
+    height: 72px;
+  }
+  
+  .logo {
+    color: #fff;
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    position: relative;
+    bottom: 26px;
+    left: 154px;
+  }
+  
+  .nav-button {
+    position: relative;
+    right: 36px;
+  }
+
+  .headline {
+    width: 709px;
+    height: 496px;
+    flex-wrap: wrap;
+  }
+
+  .social_media {
+    order: -1;
+    flex: 1 0 162px;
+    width: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 297px 88px 341px 36px;
+  }
+  
+  .primary-text {
+    width: 400px;
+    height: 160px;
+    font-size: 72px;
+    line-height: 82px;
+    margin: 192px 0 0;
+
+  }
+  
+  .supporting-text {
+    color: #fff;
+    width: 566px;
+    height: 24px;
+    font-family: 'Inter', serif;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 500;
+    margin: 24px 0 0;
+  }
+  
+  .description {
+    color: #f4f5f7;
+    width: 550px;
+    height: 123px;
+    font-family: 'Inter', serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 24px 0 0;
+    position: absolute;
+    top: 496px;
+    left: 143px;
+  }
+  
+  
+
+
+
 }
