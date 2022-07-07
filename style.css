@@ -651,7 +651,7 @@ body {
     width: 1440px;
     height: 630px;
     margin: 0;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 25px;
   }
   
