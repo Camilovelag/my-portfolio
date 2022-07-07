@@ -745,14 +745,29 @@ body {
   background: #f55800;
 }
 
+/* skills */
+
+.skills {
+  flex-flow: row wrap;
+  margin: 146px 153px 142px;
+  width: 1134px;
+  height: 434px;
+  justify-content: space-between;
+}
+
+.skills-container {
+  width: 228px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.skill {
+  margin: 10px 0 0;
+}
 
 
 /* footer */
-
-
-
-
-
-
-
 }
