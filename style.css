@@ -594,7 +594,7 @@ body {
 
   .headline {
     width: 709px;
-    height: 496px;
+    height: 870px;
     flex-wrap: wrap;
   }
 
@@ -614,7 +614,6 @@ body {
     font-size: 72px;
     line-height: 82px;
     margin: 192px 0 0;
-
   }
   
   .supporting-text {
@@ -637,21 +636,18 @@ body {
     line-height: 32px;
     font-weight: 400;
     margin: 24px 0 0;
-    position: absolute;
-    top: 496px;
-    left: 143px;
   }
   /* REEEECENT WORKS */
   .container-2 {
-    width: 1440px;
+    width: 1204px;
     margin: 135px 118px 130px;
   }
   
   .recent-works {
-    width: 1440px;
+    width: 1155px;
     height: 630px;
     margin: 0;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding: 25px;
   }
   
@@ -680,38 +676,26 @@ body {
     font-size: 40px;
     line-height: 52px;
     font-weight: 400;
+    margin: 165px 0 0 24px;
   }
   
   .recent-works-description {
     color: #091e42;
-    width: 327px;
-    height: 147px;
+    width: 448px;
+    height: 140px;
     font-family: 'Inter', serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: justify;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    margin: 24px 0 0 24px;
   }
   
   .recent-works-tech {
-    display: flex;
-    justify-content: flex-start;
-    gap: 12px;
-    height: 40px;
-    padding-left: 0;
+    margin: 24px 0 0 24px;
   }
   
-  .recent-works-tech-items {
-    color: #091e42;
-    font-family: 'Inter', serif;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 500;
-    padding: 10px 12px 10px 12px;
-    list-style: none;
-    border: 1px solid #8993a4;
+  .recent-works-button {
+    margin: 24px 0 0 24px;
   }
 
 
