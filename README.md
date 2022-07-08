@@ -42,6 +42,9 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@camilovelag](https://twitter.com/camilovelag)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/camilovelag)
 
+👤 **Tahseen Zahra**
+
+- GitHub: [@camilovelag](https://github.com/tahseenzahra)
 
 ## 🤝 Contributing
 

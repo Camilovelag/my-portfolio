@@ -103,9 +103,6 @@ body {
   margin-top: 12px;
   margin-left: 24px;
   margin-bottom: 0;
-}
-
-.social-media-icon {
   list-style-type: none;
 }
 
@@ -214,6 +211,7 @@ body {
 .recent-works-button:disabled {
   background-color: rgb(210, 207, 207);
   color: rgb(78, 77, 77);
+  border: 1px solid rgb(210, 207, 207);
 }
 
 .card-works {
@@ -298,6 +296,7 @@ body {
 .card-works-button:disabled {
   background-color: rgb(210, 207, 207);
   color: rgb(78, 77, 77);
+  border: 1px solid rgb(210, 207, 207);
 }
 
 .container-3 {
@@ -370,6 +369,7 @@ body {
 .about-me-button:disabled {
   background-color: rgb(210, 207, 207);
   color: rgb(78, 77, 77);
+  border: 1px solid rgb(210, 207, 207);
 }
 
 .skills {
@@ -424,4 +424,122 @@ body {
   list-style: none;
   text-align: center;
   margin-top: 32px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-us-description {
+  color: #172b4d;
+  font-family: 'Inter', serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  width: 327px;
+  height: 264px;
+  margin: 120px 24px 0 24px;
+  text-align: center;
+}
+
+.contact-us-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  width: 375px;
+}
+
+.contact-us-name {
+  color: #979493;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #dbd8d7;
+  width: 295px;
+  padding: 14px;
+  margin: 0 24px 0 24px;
+  list-style: none;
+}
+
+.contact-us-email {
+  color: #979493;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #dbd8d7;
+  width: 295px;
+  padding: 14px;
+  margin: 0 24px 0 24px;
+  list-style: none;
+}
+
+.full-name {
+  border-style: none;
+}
+
+.email {
+  border-style: none;
+}
+
+.text-area {
+  color: #3c3a39;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  border-style: none;
+  background-color: #fbf8f7;
+  width: 295px;
+  height: 114px;
+  margin: 24px;
+  padding: 12px;
+}
+
+.contact-us-button {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  padding: 12px;
+  border-style: none;
+  position: relative;
+  left: 122px;
+}
+
+.contact-us-button:hover {
+  background-color: #f6e6cb;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.contact-us-button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  border-style: none;
+}
+
+.contact-us-button:disabled {
+  background-color: rgb(210, 207, 207);
+  color: rgb(78, 77, 77);
+  border: 1px solid rgb(210, 207, 207);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.footer-links {
+  filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
 }
