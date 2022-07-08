@@ -66,6 +66,8 @@ body {
   margin-bottom: 0;
 }
 
+
+
 .supporting-text {
   color: #fff5e1;
   width: 327px;
@@ -77,6 +79,11 @@ body {
   margin-top: 12px;
   margin-left: 24px;
   margin-bottom: 0;
+  transition: 0.5s 1s linear;
+}
+
+.supporting-text:hover {
+  font-size: 40px;
 }
 
 .description {
