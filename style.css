@@ -845,8 +845,107 @@ body {
   padding: 12px;
   position: absolute;
   left: 614px;
+}
+
+.footer-icons {
+  border-top: 1px solid #dfe1e6;
+}
+
+.container-2 {
+  display: none;
+}
+
+/* container-2-alt */
+
+.container-2-alt {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 1155px;
+  height: 907px;
+  margin: 24px 142px 130px;
+}
+
+.card-works-alt {
+  display: flex;
+  flex-flow: column wrap-reverse;
+  width: 369px;
+  height: 435px;
+  justify-content: flex-end;
+}
+
+.background-1 {
+  background-image: url("images/card_works_background-alt-1.png");
+  background-repeat: no-repeat;
+}
+
+.background-2 {
+  background-image: url("images/card_works_background-alt-2.png");
+  background-repeat: no-repeat;
+}
+
+.background-3 {
+  background-image: url("images/card_works_background-alt-3.png");
+  background-repeat: no-repeat;
+}
+
+.background-4 {
+  background-image: url("images/card_works_background-alt-4.png");
+  background-repeat: no-repeat;
+}
+
+.title-alt {
+  width: 337px;
+}
+
+.description-alt {
+  width: 337px;
+  height: 72px;
+  margin: 0 16px 0 0;
+  text-align: justify;
+}
+
+.tech-alt {
+  margin: 24px 16px 16px 0;
+}
+
+.card-works-tech-items {
+  color: #fff;
+  font-family: 'Inter', serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 10px 12px 10px 12px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.24);
+} */
+
+.button-alt {
+  letter-spacing: 0.03em;
+  background: #f55800;
+  border: 1px solid #f55800;
+  width: 369px;
+  height: 58px;
+  margin: 377px 0 0;
+}
+
+.card-works-button:hover {
+  background-color: #f6e6cb;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.card-works-button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  border-style: none;
+}
+
+.card-works-button:disabled {
+  background-color: rgb(210, 207, 207);
+  color: rgb(78, 77, 77);
+  border: 1px solid rgb(210, 207, 207);
+}
 
 
-
-  
 }
