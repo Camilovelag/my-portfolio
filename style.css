@@ -376,7 +376,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
+  margin: 136px 0 131px;
 }
 
 .language {
@@ -557,24 +557,26 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    width: 1440px;
+    width: 100%;
     height: 4561px;
+    margin: auto;
   }
 
   .container {
-    width: 1440px;
+    width: 100%;
     height: 870px;
     background-image: url("images/Illustration-header.png");
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: 780px -20px;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 1440px;
+    width: 100%;
     height: 72px;
+    margin: 0 auto;
   }
 
   .logo {
@@ -640,9 +642,9 @@ body {
   }
 
   .container-2 {
-    width: 1204px;
+    width: 100%;
     height: 660px;
-    margin: 135px 118px 0;
+    margin: 135px auto 0;
   }
 
   .recent-works {
@@ -651,6 +653,7 @@ body {
     margin: 0;
     flex-wrap: wrap;
     padding: 25px;
+    margin: 0 auto;
   }
 
   .recent-works-title {
@@ -701,13 +704,14 @@ body {
   }
 
   .container-3 {
-    width: 1440px;
+    width: 100%;
     height: 1195px;
     background-color: #262626;
     margin-top: 120px;
     background-image: url("images/Frame_desktop.png");
     background-repeat: no-repeat;
     background-position: 854px 99px;
+    margin: 0 auto;
   }
 
   .about-me {
@@ -743,7 +747,7 @@ body {
 
   .skills {
     flex-flow: row wrap;
-    margin: 146px 153px 142px;
+    margin: 146px auto 142px 153px;
     width: 1134px;
     height: 434px;
     justify-content: space-between;
@@ -763,9 +767,9 @@ body {
   }
 
   .contact-us {
-    width: 1440px;
+    width: 100%;
     height: 686px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .contact-us-container {
@@ -775,6 +779,7 @@ body {
     height: 614px;
     padding: 130px 142px 226px 135px;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .contact-us-description {
@@ -850,7 +855,7 @@ body {
     justify-content: space-between;
     width: 1155px;
     height: 907px;
-    margin: 0 142px 130px;
+    margin: 0 auto 130px;
   }
 
   .card-works-alt {
@@ -912,4 +917,15 @@ body {
   .container-2-alt {
     display: none;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    background-position: 100% -20px;
+  }
+
+  .container-3 {
+    background-position: 100% 99px;
+  }
+  
 }
