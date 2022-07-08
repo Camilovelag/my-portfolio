@@ -561,7 +561,7 @@ body {
     height: 4561px;
   }
 
-    .container {
+  .container {
     width: 1440px;
     height: 870px;
     background-image: url("images/Illustration-header.png");
@@ -669,7 +669,7 @@ body {
     height: 443px;
     margin: 114px 0 0;
   }
-  
+
   .recent-works-supporting-text {
     color: #091e42;
     width: 448px;
@@ -679,7 +679,7 @@ body {
     font-weight: 400;
     margin: 165px 0 0 24px;
   }
-  
+
   .recent-works-description {
     color: #091e42;
     width: 448px;
@@ -694,7 +694,7 @@ body {
   .recent-works-tech {
     margin: 24px 0 0 24px;
   }
-  
+
   .recent-works-button {
     margin: 24px 0 0 24px;
   }
@@ -793,7 +793,7 @@ body {
     width: 684px;
   }
 
-/* .contact-us-name {
+  /* .contact-us-name {
   color: #979493;
   font-family: 'Inter', serif;
   font-size: 15px;
@@ -804,7 +804,7 @@ body {
   padding: 14px;
   margin: 0 24px 0 24px;
   list-style: none;
-} */
+  } */
 
   .contact-us-email {
     width: 684px;
@@ -822,7 +822,7 @@ body {
     list-style-type: none;
   }
 
-  .contact-us-list-item{
+  .contact-us-list-item {
     list-style-type: none;
   }
 
@@ -904,13 +904,11 @@ body {
     height: 58px;
     margin: 377px 0 0;
   }
-
 }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
   .container-2-alt {
     display: none;
   }
-    
 }
