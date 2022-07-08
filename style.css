@@ -569,7 +569,7 @@ body {
   .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     height: 72px;
     margin: 0 auto;
@@ -577,18 +577,39 @@ body {
 
   .logo {
     color: #fff;
-    font-family: 'Roboto', serif;
+    font-family: 'Inter', serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
-    position: relative;
-    bottom: 26px;
-    left: 154px;
+    position: static;
+    margin: 0 0 0 154px;
   }
 
   .nav-button {
-    position: relative;
-    right: 36px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: static;
+    margin: 0 156px 0 0;
+  }
+
+  .normal-button {
+    display: none;
+  }
+
+  .header-link {
+    color: #fff;
+    font-family: 'Inter', serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin: 0 16px;
+  }
+
+  .mail-icon {
+    margin: 0 0 0 16px;
   }
 
   .headline {
@@ -923,6 +944,14 @@ body {
   }
 
   .last-name {
+    display: none;
+  }
+
+  .header-link {
+    display: none;
+  }
+
+  .mail-icon {
     display: none;
   }
 }
