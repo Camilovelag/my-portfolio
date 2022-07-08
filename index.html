@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="container">
+  <main class="container">
     <header class="header">
       <a class="logo">John Doe</a>
       <nav class="nav-button">
@@ -51,7 +51,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </main>
   <section class="container-2">
     <div class="recent-works">
       <h2 class="recent-works-title">My Recent Works</h2>
@@ -180,8 +180,6 @@
       </ul>
     </div>
   </section>
-
-
   <!--End container-3-alt-->
   <section class="container-3">
     <div class="about-me">
@@ -220,14 +218,20 @@
       <h1 class="contact-us-description">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
       <form class="form" action="https://formspree.io/f/mvoljkrr" method="post">
         <ul class="contact-us-list">
+          <li class="contact-us-full-name">
+            <input class="full-name input-field" type="text" id="full_name" name="full_name" placeholder="Full Name" required maxlength="30">
+          </li>
           <li class="contact-us-name">
-            <input class="full-name" type="text" id="name" name="username" placeholder="Full Name" required maxlength="30">
+            <input class="first-name input-field" type="text" id="first_name" name="first_name" placeholder="First Name" required maxlength="30">
+          </li>
+          <li class="contact-us-name">
+            <input class="last-name input-field" type="text" id="last_name" name="last_name" placeholder="Last Name" required maxlength="30">
           </li>
           <li class="contact-us-email">
-            <input class="email" type="email" id="email" name="email" placeholder="Email Address" required>
+            <input class="email input-field" type="email" id="email" name="email" placeholder="Email Address" required>
           </li>
           <li class="contact-us-text-area">
-            <textarea class="text-area" name="message" id="textarea" maxlength="500" required>Enter text here</textarea>
+            <textarea class="text-area" name="message" id="textarea" maxlength="500" placeholder="Enter text here" required></textarea>
           </li>
           <li class="contact-us-list-item">
             <button type="submit" class="contact-us-button">Get in touch</button>
