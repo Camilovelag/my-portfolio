@@ -641,7 +641,8 @@ body {
 
   .container-2 {
     width: 1204px;
-    margin: 135px 118px 130px;
+    height: 660px;
+    margin: 135px 118px 0;
   }
 
   .recent-works {
@@ -839,7 +840,7 @@ body {
     border-top: 1px solid #dfe1e6;
   }
 
-  .container-2 {
+  .card-works {
     display: none;
   }
 
@@ -849,7 +850,7 @@ body {
     justify-content: space-between;
     width: 1155px;
     height: 907px;
-    margin: 24px 142px 130px;
+    margin: 0 142px 130px;
   }
 
   .card-works-alt {
@@ -863,6 +864,7 @@ body {
   .background-1 {
     background-image: url("images/card_works_background-alt-1.png");
     background-repeat: no-repeat;
+    border: 2px solid black;
   }
 
   .background-2 {
@@ -899,7 +901,7 @@ body {
   .button-alt {
     letter-spacing: 0.03em;
     background: #f55800;
-    border: 1px solid #f55800;
+    border-style: none;
     width: 369px;
     height: 58px;
     margin: 377px 0 0;
@@ -907,7 +909,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    
   .container-2-alt {
     display: none;
   }
