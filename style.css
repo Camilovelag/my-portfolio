@@ -896,6 +896,7 @@ body {
 
 .title-alt {
   width: 337px;
+  margin: 24px 16px 16px 0;
 }
 
 .description-alt {
@@ -909,17 +910,6 @@ body {
   margin: 24px 16px 16px 0;
 }
 
-.card-works-tech-items {
-  color: #fff;
-  font-family: 'Inter', serif;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 500;
-  padding: 10px 12px 10px 12px;
-  list-style: none;
-  background: rgba(255, 255, 255, 0.24);
-} */
-
 .button-alt {
   letter-spacing: 0.03em;
   background: #f55800;
@@ -929,23 +919,12 @@ body {
   margin: 377px 0 0;
 }
 
-.card-works-button:hover {
-  background-color: #f6e6cb;
-  color: #ff6b00;
-  border: 1px solid #ff6b00;
 }
 
-.card-works-button:active {
-  background-color: #ff6b00;
-  color: #fff;
-  border-style: none;
+@media screen and (max-width: 768px) {
+  
+.container-2-alt {
+  display: none;
 }
-
-.card-works-button:disabled {
-  background-color: rgb(210, 207, 207);
-  color: rgb(78, 77, 77);
-  border: 1px solid rgb(210, 207, 207);
-}
-
-
+  
 }
