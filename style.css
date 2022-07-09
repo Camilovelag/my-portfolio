@@ -632,7 +632,7 @@ body {
 
   .social_media_logo {
     display: block;
-    height: 70%;
+    height: 14px;
     width: auto;
   }
 
@@ -927,7 +927,7 @@ body {
     color: #262626;
     font-size: 28px;
     line-height: 36px;
-    width: 40%;
+    width: 36%;
     margin: 0;
     text-align: left;
   }
@@ -944,15 +944,17 @@ body {
   }
 
   .contact-us-name {
-    color: #979493;
-    font-family: 'Inter', serif;
-    font-size: 11px;
-    line-height: 18px;
-    font-weight: 400;
     border-bottom: 1px solid #dbd8d7;
     width: 44%;
-    padding: 10px;
+    padding: 9px;
     list-style: none;
+  }
+
+  .input-field {
+    color: #979493;
+    font-family: 'Roboto', serif;
+    font-size: 11px;
+    line-height: 18px;
   }
 
   .contact-us-full-name {
@@ -961,6 +963,7 @@ body {
 
   .contact-us-email {
     width: 100%;
+    padding: 9px;
     margin: 0;
   }
 
@@ -972,9 +975,16 @@ body {
   .text-area {
     color: #3c3a39;
     font-family: 'Roboto', serif;
-    width: 60%;
-    height: 114px;
-    margin: 24px 24px 24px 0;
+    width: 96%;
+    height: 80px;
+    padding: 9px;
+    margin: 0;
+    margin: 17px 0 0;
+  }
+
+  .contact-us-button {
+    position: static;
+    margin-top: 16px;
   }
 
   .contact-us-list-item {
@@ -983,6 +993,14 @@ body {
 
   .footer-icons {
     border-top: 1px solid #dfe1e6;
+    margin: 0;
+    height: 50px;
+  }
+
+  .social-media_footer {
+    width: fit-content;
+    height: fit-content;
+    gap: 15px;
   }
 }
 
