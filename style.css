@@ -561,7 +561,7 @@ body {
     width: 100%;
     background-image: url("images/Illustration-header.png");
     background-repeat: no-repeat;
-    background-size: 45% auto;
+    background-size: auto 100%;
     background-position: 100% 0%;
   }
 
@@ -636,7 +636,7 @@ body {
     width: auto;
   }
 
-  .primary-text {
+  .main-headline {
     width: 300px;
     font-size: 50px;
     line-height: 58px;
@@ -824,42 +824,37 @@ body {
 
   .container-3 {
     width: 100%;
-    height: 1195px;
     background-color: #262626;
     background-image: url("images/Frame_desktop.png");
     background-repeat: no-repeat;
-    background-position: 854px 99px;
+    background-size: auto 20%;
+    background-position: 100% 10%;
     margin: 120px auto 0;
   }
 
-  .about-me {
-    padding-bottom: 151px;
-    margin: 131px 142px 0;
+.about-me {
+    padding: 0;
+    margin: 100px;
     background-image: none;
+    justify-content: flex-start;
+    gap: 17px;
   }
 
   .about-me-title {
-    color: #f55800;
-    font-family: 'Crete Round', serif;
-    line-height: 82px;
     margin: 0;
-    width: 566px;
-    height: 78px;
+    padding: 0;
+    height: auto;
   }
 
   .about-me-description {
-    color: #f4f5f7;
-    font-family: 'Inter', serif;
-    font-size: 20px;
-    line-height: 32px;
-    width: 566px;
-    height: 148px;
-    margin: 24px 0 0;
+    margin: 0;
+    width: 396px;
+    height: auto;
   }
 
   .about-me-button {
     letter-spacing: 0.03em;
-    margin: 24px 0 0;
+    margin: 0 0 98px;
     background: #f55800;
   }
 
