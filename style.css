@@ -340,7 +340,7 @@ body {
   height: 148px;
 }
 
-.about-me-button {
+.submit-btn {
   color: #fff;
   font-family: 'Inter', serif;
   font-size: 16px;
@@ -354,19 +354,19 @@ body {
   height: fit-content;
 }
 
-.about-me-button:hover {
+.submit-btn:hover {
   background-color: #f6e6cb;
   color: #ff6b00;
   border: 1px solid #ff6b00;
 }
 
-.about-me-button:active {
+.submit-btn:active {
   background-color: #ff6b00;
   color: #fff;
   border-style: none;
 }
 
-.about-me-button:disabled {
+.submit-btn:disabled {
   background-color: rgb(210, 207, 207);
   color: rgb(78, 77, 77);
   border: 1px solid rgb(210, 207, 207);
@@ -853,13 +853,15 @@ body {
     height: auto;
   }
 
-  .about-me-button {
+  .submit-btn {
     letter-spacing: 0.03em;
     margin: 0 0 98px;
     background: #f55800;
     padding: 6px 7px;
     font-size: 12px;
     line-height: 17px;
+    width: fit-content;
+    height: fit-content;
   }
 
   .skills {
@@ -962,6 +964,11 @@ body {
     margin: 0;
   }
 
+  .contact-us-text-area {
+    list-style-type: none;
+    width: 100%;
+  }
+
   .text-area {
     color: #3c3a39;
     font-family: 'Roboto', serif;
@@ -970,21 +977,8 @@ body {
     margin: 24px 24px 24px 0;
   }
 
-  .contact-us-text-area {
-    list-style-type: none;
-  }
-
   .contact-us-list-item {
     list-style-type: none;
-  }
-
-  .contact-us-button {
-    color: #fff;
-    font-family: 'Roboto', serif;
-    background: #f55800;
-    padding: 12px;
-    position: absolute;
-    left: 614px;
   }
 
   .footer-icons {
