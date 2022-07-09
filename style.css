@@ -796,7 +796,7 @@ body {
     line-height: 32px;
     margin: 0;
   }
-  
+
   .description-alt {
     width: 100%;
     height: auto;
@@ -815,7 +815,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
   .tech-items-alt {
     height: fit-content;
     font-size: 9px;
@@ -916,7 +916,7 @@ body {
     background-image: url("images/Rectangle_56.svg");
     background-size: 12px;
   }
-  
+
   .skill-list {
     background-image: url("images/Rectangle_57.svg");
     background-size: 12px;
