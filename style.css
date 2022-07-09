@@ -671,16 +671,19 @@ body {
     width: auto;
   }
 
-  .recent-works {
+  .title-container {
+    display: flex;
     flex-flow: row wrap;
-    margin: 0;
-    width: auto;
-    gap: 17px;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .recent-works-title {
     color: #091e42;
     width: auto;
+    height: auto;
     font-size: 28px;
     line-height: 52px;
     margin: 0;
@@ -689,36 +692,43 @@ body {
   }
 
   .div-line {
-    width: calc(97% - 220px);
+    width: calc(98% - 220px);
     height: 1px;
+    align-self: center;
   }
 
   .img-placeholder {
     padding: 0;
     margin: 0;
-    width: 60%;
+    width: 450px;
     height: auto;
+  }
+
+  .recent-works {
+    flex-flow: column wrap;
+    margin: 0;
+    height: 320px;
+    width: auto;
+    gap: 17px;
   }
 
   .recent-works-supporting-text {
     color: #091e42;
-    width: 448px;
-    height: 48px;
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: 400;
-    margin: 165px 0 0 24px;
+    font-size: 28px;
+    line-height: 36px;
+    height: auto;
+    margin: 0;
   }
 
   .recent-works-description {
     color: #091e42;
-    width: 448px;
-    height: 140px;
     font-family: 'Inter', serif;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 20px;
     text-align: left;
-    margin: 24px 0 0 24px;
+    width: 42%;
+    height: auto;
+    margin: 0;
   }
 
   .recent-works-tech {
@@ -726,7 +736,7 @@ body {
   }
 
   .recent-works-button {
-    margin: 24px 0 0 24px;
+    margin: 0px;
   }
 
   .card-works {
@@ -801,13 +811,13 @@ body {
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 8px;
-    height: auto;
+    height: fit-content;
     margin: 0;
     padding: 0;
   }
   
   .tech-items-alt {
-    height: auto;
+    height: fit-content;
     font-size: 9px;
     line-height: 12px;
     font-weight: 500;
@@ -860,13 +870,16 @@ body {
 
   .submit-btn {
     letter-spacing: 0.03em;
-    margin: 0 0 98px;
     background: #f55800;
     padding: 6px 7px;
     font-size: 12px;
     line-height: 17px;
     width: fit-content;
     height: fit-content;
+  }
+
+  .about-me-button {
+    margin: 0 0 98px;
   }
 
   .skills {
