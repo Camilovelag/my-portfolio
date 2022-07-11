@@ -10,28 +10,9 @@
 - HTML
 - CSS
 
+## Link for webpage
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+To visit my webpage, please click on the link (https://camilovelag.github.io/MV_Portfolio/)
 
 
 ## Authors
@@ -44,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Tahseen Zahra**
 
-- GitHub: [@camilovelag](https://github.com/tahseenzahra)
+- GitHub: [@tahseenzahra](https://github.com/tahseenzahra)
 
 ## 🤝 Contributing
 
