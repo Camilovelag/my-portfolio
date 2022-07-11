@@ -5,14 +5,14 @@
 > This project is intended to setup the skeleton for portfolio web version.
 
 
-## Built With
+## 🧰 Built With
 
 - HTML
 - CSS
 
-## Link for webpage
+## 🌐 Link for webpage
 
-To visit my webpage, please click on the link (https://camilovelag.github.io/MV_Portfolio/)
+To visit my webpage, please click on the link (https://camilovelag.github.io/MV_Portfolio/).
 
 
 ## Authors
