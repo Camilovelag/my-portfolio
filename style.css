@@ -700,7 +700,9 @@ body {
   .img-placeholder {
     padding: 0;
     margin: 0;
-    width: 450px;
+    width: auto;
+    max-width: 450px;
+    min-width: 350px;
     height: auto;
   }
 
