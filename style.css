@@ -45,6 +45,17 @@ body {
   right: 36px;
 }
 
+.nav-button a {
+  color: #fff5e1;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -1035,10 +1046,10 @@ body {
     display: none;
   }
 
-  .header-link {
+/*.header-link {
     display: none;
   }
-
+*/
   .mail-icon {
     display: none;
   }
