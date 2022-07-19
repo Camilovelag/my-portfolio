@@ -49,3 +49,10 @@ menuContactUs.addEventListener('click', () => {
   const div6 = document.querySelector('#header-logo');
   div6.classList.remove('active-logo');
 });
+
+const popupWindow = document.querySelector('.project-1');
+
+popupWindow.addEventListener('click', () => {
+  const div7 = document.querySelector('#popup');
+  div7.classList.toggle('show-popup');
+});

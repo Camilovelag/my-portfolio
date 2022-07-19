@@ -149,6 +149,32 @@ body {
   list-style-type: none;
 }
 
+.close-popup {
+  height: 40px;
+  width: 40px;
+}
+
+/* POPUP WINDOW */
+.popup {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 400px;
+  background: black;
+  margin: auto;
+  color:  #fff;
+  visibility: hidden;
+}
+
+.show-popup {
+  visibility: visible;
+}
+
+/* POPUP WINDOW*/
+
+
 .container-2 {
   display: grid;
   width: 375px;
