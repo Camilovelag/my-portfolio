@@ -369,7 +369,7 @@ body {
   font-size: 72px;
   letter-spacing: 0.37px;
   line-height: 88px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-top: 120px;
   width: 327px;
   height: 79px;
@@ -397,7 +397,7 @@ body {
   padding: 12px;
   border-style: none;
   width: fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .submit-btn:hover {
@@ -866,13 +866,13 @@ body {
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 8px;
-    height: fit-content;
+    height: auto;
     margin: 0;
     padding: 0;
   }
 
   .tech-items-alt {
-    height: fit-content;
+    height: auto;
     font-size: 9px;
     line-height: 12px;
     font-weight: 500;
@@ -930,7 +930,7 @@ body {
     font-size: 12px;
     line-height: 17px;
     width: fit-content;
-    height: fit-content;
+    height: auto;
   }
 
   .about-me-button {
@@ -1072,7 +1072,7 @@ body {
 
   .social-media_footer {
     width: fit-content;
-    height: fit-content;
+    height: auto;
     gap: 15px;
   }
 }
