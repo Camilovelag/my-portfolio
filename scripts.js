@@ -50,9 +50,16 @@ menuContactUs.addEventListener('click', () => {
   div6.classList.remove('active-logo');
 });
 
-const popupWindow = document.querySelector('.project-1');
+const openPopupWindow = document.querySelector('.project-1');
 
-popupWindow.addEventListener('click', () => {
+openPopupWindow.addEventListener('click', () => {
   const div7 = document.querySelector('#popup');
   div7.classList.toggle('show-popup');
+});
+
+const closePopupWindow = document.querySelector('.popup-btn');
+
+closePopupWindow.addEventListener('click', () => {
+  const div8 = document.querySelector('#popup');
+  div8.classList.toggle('show-popup');
 });

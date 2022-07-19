@@ -160,12 +160,15 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 400px;
+  width: 96%;
+  height: 84%;
   background: black;
   margin: auto;
   color:  #fff;
   visibility: hidden;
+  position: fixed;
+  top: 8%;
+  left: 2%;
 }
 
 .show-popup {
