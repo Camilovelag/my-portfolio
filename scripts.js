@@ -50,13 +50,20 @@ menuContactUs.addEventListener('click', () => {
   div6.classList.remove('active-logo');
 });
 
+
+/* Open popup window section */
+
+let proj1 = ['Multi Post Stories',10];
+
 const openPopupWindow = document.querySelector('.project-1');
 
 openPopupWindow.addEventListener('click', () => {
   const div7 = document.querySelector('#popup');
   div7.classList.toggle('show-popup');
+  document.getElementById("popup-title").innerHTML = proj1[0];
 });
 
+// Close popup
 const closePopupWindow = document.querySelector('.popup-btn');
 
 closePopupWindow.addEventListener('click', () => {
