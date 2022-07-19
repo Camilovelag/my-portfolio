@@ -24,6 +24,7 @@ body {
   align-items: flex-end;
   width: 375px;
   height: 92px;
+  padding: 1rem;
 }
 
 .logo {
@@ -32,12 +33,11 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  bottom: 12px;
-  left: 24px;
+  margin-left: 12px;
+}
+
+.active-logo {
+  color: #3c3a39;
 }
 
 .nav-button {
@@ -45,29 +45,34 @@ body {
   right: 36px;
 }
 
+.hamburger-btn {
+  all: unset;
+  height: 24px;
+  width: 24px;
+  margin-left: 12px;
+  background: url(images/open-icon.png) no-repeat;
+  background-position: 50% 50%;
+}
+
+.switch-btn {
+  background: url(images/close-icon.png) no-repeat;
+  background-position: 50% 50%;
+}
+
 .links-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   position: fixed;
-  top: 0;
-  left: -120%;
-  padding: 6.75rem 1rem 1rem;
-  width: 100%;
+  left: 0;
+  top: -140%;
+  padding: 1rem;
+  width: 375px;
   height: 100%;
   background-color: #3C3A39;
 }
 
-.links-container:active {
-  left: 0;
-}
-
-.hamburger-btn {
-  display: block;
-}
-
-.hamburger-btn:active {
-  background-color: #fff; 
+.active-menu {
+  top: 120px;
 }
 
 .nav-button a {
@@ -636,7 +641,7 @@ body {
     margin: 0 10% 0 0;
   }
 
-  .normal-button {
+  .normal-btn {
     display: none;
   }
 
