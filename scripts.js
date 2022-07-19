@@ -1,4 +1,4 @@
-function showMenu() {
+Myfunct(function showMenu() {
   const div = document.querySelector('#links-container');
   div.classList.toggle('active-menu');
 
@@ -7,7 +7,7 @@ function showMenu() {
 
   const div3 = document.querySelector('#header-logo');
   div3.classList.toggle('active-logo');
-}
+}.bind(this));
 
 function hideMenu() {
   const div4 = document.querySelector('#links-container');
