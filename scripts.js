@@ -11,7 +11,6 @@ hamburgerOpen.addEventListener('click', () => {
   div3.classList.toggle('active-logo');
 });
 
-
 const menuRecentWorks = document.querySelector('.link-1');
 
 menuRecentWorks.addEventListener('click', () => {
