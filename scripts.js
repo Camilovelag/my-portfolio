@@ -1,4 +1,4 @@
-function showMenu() {
+(function(showMenu) {
   const div = document.querySelector('#links-container');
   div.classList.toggle('active-menu');
 
@@ -7,9 +7,9 @@ function showMenu() {
 
   const div3 = document.querySelector('#header-logo');
   div3.classList.toggle('active-logo');
-}
+})();
 
-function hideMenu() {
+(function (hideMenu) {
   const div4 = document.querySelector('#links-container');
   div4.classList.remove('active-menu');
 
@@ -18,4 +18,4 @@ function hideMenu() {
 
   const div6 = document.querySelector('#header-logo');
   div6.classList.remove('active-logo');
-}
+})();
