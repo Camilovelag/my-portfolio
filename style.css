@@ -663,6 +663,10 @@ body {
     background-color: none;
   }
 
+  .active-menu {
+    top: 0;
+  }
+
   .mail-icon {
     display: block;
     height: 30%;
