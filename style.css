@@ -635,17 +635,10 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    width: 20%;
-    position: static;
     margin: 0 10% 0 0;
   }
 
-  .normal-btn {
-    display: none;
-  }
-
-  .header-link {
+  .nav-button a {
     color: #fff;
     font-family: 'Inter', serif;
     font-size: 10px;
@@ -653,6 +646,21 @@ body {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-decoration: none;
+    border-bottom: none;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: none;
   }
 
   .mail-icon {
