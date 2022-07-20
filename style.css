@@ -149,12 +149,16 @@ body {
   list-style-type: none;
 }
 
+/* POPUP WINDOW */
+
 .close-popup {
   height: 40px;
   width: 40px;
+  position: fixed;
+  top:12%;
+  right: 6%;
 }
 
-/* POPUP WINDOW */
 .popup {
   display: flex;
   flex-flow: column wrap;
@@ -173,6 +177,11 @@ body {
 
 .show-popup {
   visibility: visible;
+}
+
+.popup-img {
+  width: 80%;
+  height: auto;
 }
 
 /* POPUP WINDOW*/

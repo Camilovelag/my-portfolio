@@ -53,14 +53,23 @@ menuContactUs.addEventListener('click', () => {
 
 /* Open popup window section */
 
-let proj1 = ['Multi Post Stories',10];
+let proj1 = ['Multi Post Stories',
+            './images/popup-img.png',
+            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+            '#',
+            '#'];
 
 const openPopupWindow = document.querySelector('.project-1');
 
 openPopupWindow.addEventListener('click', () => {
   const div7 = document.querySelector('#popup');
   div7.classList.toggle('show-popup');
-  document.getElementById("popup-title").innerHTML = proj1[0];
+  document.getElementById('popup-title').innerHTML = proj1[0];
+  document.getElementById('popup-img').src = proj1[1];
+  document.getElementById('popup-description').innerHTML = proj1[2];
+  document.getElementById("see-live > a").href = proj1[3];
+  document.getElementById("see-source > a").href = proj1[4];
+
 });
 
 // Close popup
