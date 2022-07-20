@@ -757,6 +757,16 @@ body {
     font-weight: 400;
     margin: 18px 0 0;
   }
+/* pop up window for media query */
+  
+  .popup-img {
+    width: 50%;
+  }
+
+  .popup-description {
+    max-width: 50%;
+  }
+/* pop up window for media query */
 
   .container-2 {
     margin: 90px 100px 0;
