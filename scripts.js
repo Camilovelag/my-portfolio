@@ -99,7 +99,7 @@ const lang3 = arr1[0].popuptec[2];
 const lang4 = arr1[0].popuptec[3];
 
 if (window.matchMedia('(max-width: 768px)').matches) {
-  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works popup">  
+  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works">  
                 <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
                 <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
                 <ul class="card-works-tech">

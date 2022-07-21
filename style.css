@@ -855,6 +855,12 @@ body {
   }
 /* ----------------pop up window for media query---------------- */
 
+  #Portfolio-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
   .container-2 {
     margin: 90px 100px 0;
     width: auto;
