@@ -91,7 +91,7 @@ form.addEventListener("submit", (e) => {
   let upperCase = emailValue.replace(/[^A-Z]/g, '');
   if (upperCase.length > 0) {
       e.preventDefault();
-      errorMessage.innerText = 'Add msg here';
+      errorMessage.innerText = 'Please type your email in lowercase';
  }
 });
 
