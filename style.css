@@ -687,6 +687,17 @@ body {
   filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
 }
 
+#error-msg {
+  color: red;
+  font-family: 'Inter', serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   body {
     width: 100vw;
@@ -1201,6 +1212,10 @@ body {
     width: fit-content;
     height: auto;
     gap: 15px;
+  }
+
+  #error-msg {
+    order: 2;
   }
 }
 
