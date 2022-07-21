@@ -80,8 +80,6 @@ closePopupWindow.addEventListener('click', () => {
   div8.classList.toggle('show-popup');
 });
 
-
-
 //Validation form--------------------------------------------------------------------------------------------
 
 const form = document.getElementById('form');
@@ -96,3 +94,11 @@ form.addEventListener("submit", (e) => {
       errorMessage.innerText = 'Add msg here';
  }
 });
+
+// form rearrange ----------------------
+let windowWidth = window.innerWidth;
+if (windowWidth > 768){
+  document.getElementById("full_name").disabled = true;
+} else {
+  document.getElementById("full_name").disabled = false;
+}
