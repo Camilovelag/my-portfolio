@@ -1,4 +1,4 @@
-//----------- TOGGLE MENU -----------
+// ----------- TOGGLE MENU -----------
 
 const hamburgerOpen = document.querySelector('.hamburger-btn');
 
@@ -93,10 +93,10 @@ const arr1 = [
   },
 ];
 
-const lang1 = arr1[0].popuptec[0];
-const lang2 = arr1[0].popuptec[1];
-const lang3 = arr1[0].popuptec[2];
-const lang4 = arr1[0].popuptec[3];
+// const lang1 = arr1[0].popuptec[0];
+// const lang2 = arr1[0].popuptec[1];
+// const lang3 = arr1[0].popuptec[2];
+// const lang4 = arr1[0].popuptec[3];
 
 if (window.matchMedia('(max-width: 768px)').matches) {
   document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works">  
@@ -127,9 +127,11 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 
 // ---------------------------- OPEN POPUP WINDOW SECTION ----------------------------------
 
-const proj1 = {title: 'Multi Post Stories',
-              img: './images/popup-img.png',
-              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'};
+const proj1 = {
+  title: 'Multi Post Stories',
+  img: './images/popup-img.png',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
+};
 
 const btn1 = document.querySelector('.project-1');
 const popupOpen = document.querySelector('.popup');
