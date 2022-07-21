@@ -203,7 +203,7 @@ body {
 }
 
 .popup-description {
-  font-family: 'Inter';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -220,9 +220,7 @@ body {
   width: 100%;
 }
 
-
 /* --------------------POPUP WINDOW-------------------- */
-
 
 .container-2 {
   display: grid;
@@ -463,7 +461,7 @@ body {
 
 .submit-btn {
   background: #ff6b00;
-  color: #fff;  /*temporary color */
+  color: #fff;
   padding: 12px;
   border-style: none;
 }
@@ -506,7 +504,6 @@ body {
 .submit-btn:disabled a {
   color: rgb(78, 77, 77);
 }
-
 
 .skills {
   display: flex;
@@ -820,7 +817,8 @@ body {
     font-weight: 400;
     margin: 18px 0 0;
   }
-/* ----------------pop up window for media query---------------- */
+
+  /* ----------------pop up window for media query---------------- */
   .popup {
     width: auto;
     margin: 10vh 10vw;
@@ -856,7 +854,8 @@ body {
     width: auto;
     align-items: flex-end;
   }
-/* ----------------pop up window for media query---------------- */
+  
+  /* ----------------pop up window for media query---------------- */
 
   .container-2 {
     margin: 90px 100px 0;
