@@ -79,3 +79,20 @@ closePopupWindow.addEventListener('click', () => {
   const div8 = document.querySelector('#popup');
   div8.classList.toggle('show-popup');
 });
+
+
+
+//Validation form--------------------------------------------------------------------------------------------
+
+const form = document.getElementById('form');
+const email = document.getElementById("email");
+const errorMessage = document.getElementById('error-msg');
+
+form.addEventListener("submit", (e) => {
+  let emailValue = email.value;
+  let upperCase = emailValue.replace(/[^A-Z]/g, '');
+  if (upperCase.length > 0) {
+      e.preventDefault();
+      errorMessage.innerText = 'Add msg here';
+ }
+});

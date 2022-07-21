@@ -252,16 +252,16 @@
     <footer class="contact-us">
       <div id="contact-us-container" class="contact-us-container">
         <h1 class="contact-us-description">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
-        <form class="form" action="https://formspree.io/f/mvoljkrr" method="post">
+        <form class="form" id="form" action="https://formspree.io/f/mvoljkrr" method="post">
           <ul class="contact-us-list">
             <li class="contact-us-full-name">
               <input class="full-name input-field" type="text" id="full_name" name="full_name" placeholder="Full Name" required maxlength="30">
             </li>
             <li class="contact-us-name">
-              <input class="first-name input-field" type="text" id="first_name" name="first_name" placeholder="First Name" required maxlength="30">
+              <input class="first-name input-field" type="text" id="first_name" name="first_name" placeholder="First Name" maxlength="30">
             </li>
             <li class="contact-us-name">
-              <input class="last-name input-field" type="text" id="last_name" name="last_name" placeholder="Last Name" required maxlength="30">
+              <input class="last-name input-field" type="text" id="last_name" name="last_name" placeholder="Last Name" maxlength="30">
             </li>
             <li class="contact-us-email">
               <input class="email input-field" type="email" id="email" name="email" placeholder="Email Address" required>
@@ -269,8 +269,9 @@
             <li class="contact-us-text-area">
               <textarea class="text-area input-field" name="message" id="textarea" maxlength="500" placeholder="Enter text here" required></textarea>
             </li>
+            <div id="error-msg"></div>
             <li class="contact-us-list-item">
-              <button type="submit" class="contact-us-button submit-btn">Get in touch</button>
+              <button type="submit" class="contact-us-button submit-btn" id="submit-btn">Get in touch</button>
             </li>
           </ul>
         </form>
