@@ -304,14 +304,14 @@ body {
 .recent-works-button {
   color: #fff;
   font-family: 'Inter', serif;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.75px;
   background: #ff6b00;
   border-style: none;
-  width: 124px;
-  height: 48px;
+  width: fit-content;
+  height: auto;
 }
 
 .recent-works-button:hover {
@@ -459,10 +459,8 @@ body {
 }
 
 .submit-btn {
-  background: #ff6b00;
   color: #fff;
   padding: 0.75rem;
-  border-style: none;
 }
 
 .submit-btn:hover {
