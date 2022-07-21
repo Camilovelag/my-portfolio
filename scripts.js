@@ -56,8 +56,8 @@ menuContactUs.addEventListener('click', () => {
 const proj1 = {title: 'Multi Post Stories',
               img: './images/popup-img.png',
               description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-              seeLive: '#',
-              seeSource: '#'};
+              seeLive: 'https://camilovelag.github.io/MV_Portfolio/',
+              seeSource: 'https://github.com/Camilovelag/MV_Portfolio'};
 
 const openPopupWindow = document.querySelector('.project-1');
 
@@ -67,7 +67,7 @@ openPopupWindow.addEventListener('click', () => {
   document.getElementById('popup-title').innerHTML = proj1.title;
   document.getElementById('popup-img').src = proj1.img;
   document.getElementById('popup-description').innerHTML = proj1.description;
-  document.getElementById("see-live > a").href = proj1.seeLive;
+  document.getElementById("see-live > a").src = proj1.seeLive;
   document.getElementById("see-source > a").href = proj1.seeSource;
 
 });
@@ -78,4 +78,28 @@ const closePopupWindow = document.querySelector('.popup-btn');
 closePopupWindow.addEventListener('click', () => {
   const div8 = document.querySelector('#popup');
   div8.classList.toggle('show-popup');
+});
+
+// ---------------------------- WORK CARDS INFO ----------------------------------
+
+const proj2 = {title: 'Profesional Art Printing Data',
+              img: './images/card_works_background-alt-1.png',
+              description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
+              seeLive: 'https://camilovelag.github.io/MV_Portfolio/',
+              seeSource: 'https://github.com/Camilovelag/MV_Portfolio'};
+
+document.getElementById('card-works-title').innerHTML = proj2.title;
+document.getElementById('card-works-description').innerHTML = proj2.description;
+
+const openPopupWindow2 = document.querySelector('.project-2');
+
+openPopupWindow2.addEventListener('click', () => {
+  const div8 = document.querySelector('#popup');
+  div8.classList.toggle('show-popup');
+  document.getElementById('popup-title').innerHTML = proj2.title;
+  document.getElementById('popup-img').src = proj2.img;
+  document.getElementById('popup-description').innerHTML = proj2.description;
+  document.getElementById("see-live > a").src = proj2.seeLive;
+  document.getElementById("see-source > a").href = proj2.seeSource;
+
 });
