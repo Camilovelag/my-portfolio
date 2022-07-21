@@ -1,3 +1,5 @@
+//----------- TOGGLE MENU -----------
+
 const hamburgerOpen = document.querySelector('.hamburger-btn');
 
 hamburgerOpen.addEventListener('click', () => {
@@ -50,60 +52,6 @@ menuContactUs.addEventListener('click', () => {
   div6.classList.remove('active-logo');
 });
 
-
-// Open popup window section 
-
-const proj1 = {title: 'Multi Post Stories',
-              img: './images/popup-img.png',
-              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-              seeLive: 'https://camilovelag.github.io/MV_Portfolio/',
-              seeSource: 'https://github.com/Camilovelag/MV_Portfolio'};
-
-const openPopupWindow = document.querySelector('.project-1');
-
-openPopupWindow.addEventListener('click', () => {
-  const div7 = document.querySelector('#popup');
-  div7.classList.toggle('show-popup');
-  document.getElementById('popup-title').innerHTML = proj1.title;
-  document.getElementById('popup-img').src = proj1.img;
-  document.getElementById('popup-description').innerHTML = proj1.description;
-  document.getElementById("see-live > a").src = proj1.seeLive;
-  document.getElementById("see-source > a").href = proj1.seeSource;
-
-});
-
-// Close popup
-const closePopupWindow = document.querySelector('.popup-btn');
-
-closePopupWindow.addEventListener('click', () => {
-  const div8 = document.querySelector('#popup');
-  div8.classList.toggle('show-popup');
-});
-
-// ---------------------------- WORK CARDS INFO ----------------------------------
-
-// const proj2 = {title: 'Profesional Art Printing Data',
-//               img: './images/card_works_background-alt-1.png',
-//               description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
-//               seeLive: 'https://camilovelag.github.io/MV_Portfolio/',
-//               seeSource: 'https://github.com/Camilovelag/MV_Portfolio'};
-
-// document.getElementById('card-works-title').innerHTML = proj2.title;
-// document.getElementById('card-works-description').innerHTML = proj2.description;
-
-// const openPopupWindow2 = document.querySelector('.project-2');
-
-// openPopupWindow2.addEventListener('click', () => {
-//   const div8 = document.querySelector('#popup');
-//   div8.classList.toggle('show-popup');
-//   document.getElementById('popup-title').innerHTML = proj2.title;
-//   document.getElementById('popup-img').src = proj2.img;
-//   document.getElementById('popup-description').innerHTML = proj2.description;
-//   document.getElementById("see-live > a").src = proj2.seeLive;
-//   document.getElementById("see-source > a").href = proj2.seeSource;
-
-// });
-
 // ---------------------------- WORK CARDS INFO ----------------------------------
 
 const arr1 = [
@@ -151,7 +99,7 @@ const lang3 = arr1[0].popuptec[2];
 const lang4 = arr1[0].popuptec[3];
 
 if (window.matchMedia('(max-width: 768px)').matches) {
-  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works">  
+  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works popup">  
                 <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
                 <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
                 <ul class="card-works-tech">
@@ -177,64 +125,31 @@ if (window.matchMedia('(max-width: 768px)').matches) {
                 </div>`).join('');
 }
 
-// const btn1 = document.querySelector('#btn1');
-// const popUp1 = document.getElementById('popUp1');
+// ---------------------------- OPEN POPUP WINDOW SECTION ----------------------------------
 
-// btn1.addEventListener('click', () => {
-//   popUp1.classList.toggle('popUpactive');
-//   popUp1.style.display = 'block';
-//   document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
-//   document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
-//   document.getElementById('popupimg').src = arr1[0].popupimg;
-//   document.getElementById('popuptec1').innerHTML = lang1;
-//   document.getElementById('popuptec2').innerHTML = lang2;
-//   document.getElementById('popuptec3').innerHTML = lang3;
-//   document.getElementById('popuptec4').innerHTML = lang4;
-//   document.getElementById('see_live1').href = arr1[0].btnlive;
-//   document.getElementById('see_source1').href = arr1[0].btnsource;
-//   document.getElementById('btnimg1').src = arr1[0].btnimg1;
-//   document.getElementById('btnimg2').src = arr1[0].btnimg2;
-// });
+const proj1 = {title: 'Multi Post Stories',
+              img: './images/popup-img.png',
+              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+              seeLive: 'https://camilovelag.github.io/MV_Portfolio/',
+              seeSource: 'https://github.com/Camilovelag/MV_Portfolio'};
 
-// const btn3 = document.querySelector('#btn3');
+const btn1 = document.querySelector('.project-1');
+const popupOpen = document.querySelector('.popup');
 
-// btn3.addEventListener('click', () => {
-//   popUp1.classList.toggle('popUpactive');
-//   popUp1.style.display = 'block';
-//   document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
-//   document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
-//   document.getElementById('popupimg').src = arr1[1].popupimg;
-//   document.getElementById('popuptec1').innerHTML = lang1;
-//   document.getElementById('popuptec2').innerHTML = lang2;
-//   document.getElementById('popuptec3').innerHTML = lang3;
-//   document.getElementById('popuptec4').innerHTML = lang4;
-//   document.getElementById('see_live1').href = arr1[1].btnlive;
-//   document.getElementById('see_source1').href = arr1[1].btnsource;
-//   document.getElementById('btnimg1').src = arr1[1].btnimg1;
-//   document.getElementById('btnimg2').src = arr1[1].btnimg2;
-// });
+btn1.addEventListener('click', () => {
+  popupOpen.classList.toggle('show-popup');
+  document.getElementById('popup-title').innerHTML = proj1.title;
+  document.getElementById('popup-img').src = proj1.img;
+  document.getElementById('popup-description').innerHTML = proj1.description;
+  document.getElementById("see-live > a").src = proj1.seeLive;
+  document.getElementById("see-source > a").href = proj1.seeSource;
 
-// const btn4 = document.querySelector('#btn4');
+});
 
-// btn4.addEventListener('click', () => {
-//   popUp1.classList.toggle('popUpactive');
-//   popUp1.style.display = 'block';
-//   document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
-//   document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
-//   document.getElementById('popupimg').src = arr1[2].popupimg;
-//   document.getElementById('popuptec1').innerHTML = lang1;
-//   document.getElementById('popuptec2').innerHTML = lang2;
-//   document.getElementById('popuptec3').innerHTML = lang3;
-//   document.getElementById('popuptec4').innerHTML = lang4;
-//   document.getElementById('see_live1').href = arr1[2].btnlive;
-//   document.getElementById('see_source1').href = arr1[2].btnsource;
-//   document.getElementById('btnimg1').src = arr1[2].btnimg1;
-//   document.getElementById('btnimg2').src = arr1[2].btnimg2;
-// });
+// ---------------------------- CLOSE POPUP ----------------------------------
 
-// const btn2 = document.querySelector('.btn2');
+const closePopupWindow = document.querySelector('.close-popup');
 
-// btn2.addEventListener('click', () => {
-//   popUp1.style.display = 'none';
-// });
-
+closePopupWindow.addEventListener('click', () => {
+  popupOpen.classList.toggle('show-popup');
+});
