@@ -151,20 +151,19 @@ const lang3 = arr1[0].popuptec[2];
 const lang4 = arr1[0].popuptec[3];
 
 if (window.matchMedia('(max-width: 768px)').matches) {
-  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
-                <img src="${items.popupimg}"  alt="temporary image while project is completed" class="projectpic1">
-                <div class="jobdesc"  >
-                <p class="work1title">${items.popuptitle}</p>
-                <p class="workdescription" id="firstcard">${items.popupdescription}</p>
-                <ul class="usedcode">
-                    <li class="pop">${items.popuptec[0]}</li>
-                    <li class="pop">${items.popuptec[1]}</li>
-                    <li class="pop">${items.popuptec[2]}</li>
-                    <li class="pop">${items.popuptec[3]}</li>
+  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works">  
+                <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
+                <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
+                <ul class="card-works-tech">
+                  <li class="card-works-tech-items">${items.popuptec[0]}</li>
+                  <li class="card-works-tech-items">${items.popuptec[1]}/li>
+                  <li class="card-works-tech-items">${items.popuptec[2]}</li>
+                  <li class="card-works-tech-items">${items.popuptec[3]}</li>
                 </ul>
-                    <button type="submit" id="${items.btnName}">See Project</button>
-                </div>
-                </div>`).join('');
+                <button class="card-works-button project-2" type="button">
+                  <a href="#popup">See Project</a>
+                </button>
+              </div>`).join('');
 } else {
   document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
                 <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
