@@ -148,3 +148,24 @@ const closePopupWindow = document.querySelector('.close-popup');
 closePopupWindow.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
 });
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('error-msg');
+
+form.addEventListener('submit', (e) => {
+  const emailValue = email.value;
+  const upperCase = emailValue.replace(/[^A-Z]/g, '');
+  if (upperCase.length > 0) {
+    e.preventDefault();
+    errorMessage.innerText = 'Please type your email in lowercase';
+  }
+});
+
+// form rearrange ----------------------
+const windowWidth = window.innerWidth;
+if (windowWidth > 768) {
+  document.getElementById('full_name').disabled = true;
+} else {
+  document.getElementById('full_name').disabled = false;
+}
