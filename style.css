@@ -214,7 +214,7 @@ body {
 .btn-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -493,6 +493,14 @@ body {
   line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.75px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-btn a > p {
+  margin: 0;
 }
 
 .submit-btn:hover a {
@@ -844,6 +852,7 @@ body {
   .btn-container {
     width: auto;
     align-items: flex-end;
+    justify-content: flex-start;
   }
 /* ----------------pop up window for media query---------------- */
 
