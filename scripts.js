@@ -165,20 +165,16 @@ if (window.matchMedia('(max-width: 768px)').matches) {
                 </button>
               </div>`).join('');
 } else {
-  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
-                <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
-                <div class="jobdesc" style="order:${items.id % 2 === 0 ? 2 : 1}">
-                <p class="work1title">${items.popuptitle}</p>
-               <p class="workdescription" id="firstcard">${items.popupdescription}</p>
-                <ul class="usedcode">
-                   <li class="pop">${items.popuptec[0]}</li>
-                    <li class="pop">${items.popuptec[1]}</li>
-                    <li class="pop">${items.popuptec[2]}</li>
-                   <li class="pop">${items.popuptec[3]}</li>
-               </ul>
-                   <button type="submit" id="${items.btnName}">See Project</button>
-               </div>
-             </div>`).join('');
+  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works-alt background-2">
+                  <h2 class="card-works-title title-alt">${items.popuptitle}</h2>
+                  <p class="card-works-description description-alt">A${items.popupdescription}</p>
+                  <ul class="card-works-tech tech-alt">
+                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[0]}</li>
+                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[1]}</li>
+                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[2]}</li>
+                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[3]}</li>
+                  </ul>
+                </div>`).join('');
 }
 
 // const btn1 = document.querySelector('#btn1');
