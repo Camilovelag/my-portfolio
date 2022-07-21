@@ -129,9 +129,7 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 
 const proj1 = {title: 'Multi Post Stories',
               img: './images/popup-img.png',
-              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-              seeLive: 'https://camilovelag.github.io/MV_Portfolio/',
-              seeSource: 'https://github.com/Camilovelag/MV_Portfolio'};
+              description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'};
 
 const btn1 = document.querySelector('.project-1');
 const popupOpen = document.querySelector('.popup');
@@ -141,9 +139,6 @@ btn1.addEventListener('click', () => {
   document.getElementById('popup-title').innerHTML = proj1.title;
   document.getElementById('popup-img').src = proj1.img;
   document.getElementById('popup-description').innerHTML = proj1.description;
-  document.getElementById("see-live > a").src = proj1.seeLive;
-  document.getElementById("see-source > a").href = proj1.seeSource;
-
 });
 
 // ---------------------------- CLOSE POPUP ----------------------------------
