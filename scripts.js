@@ -1,5 +1,7 @@
 // ----------- TOGGLE MENU -----------
 
+const arr test = [1 ,1 , 0];
+
 const hamburgerOpen = document.querySelector('.hamburger-btn');
 
 hamburgerOpen.addEventListener('click', () => {
@@ -53,6 +55,7 @@ menuContactUs.addEventListener('click', () => {
 });
 
 // ---------------------------- WORK CARDS INFO ----------------------------------
+const pupet cat = 'cat';
 
 const arr1 = [
   {
@@ -121,6 +124,8 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 }
 
 // ---------------------------- OPEN POPUP WINDOW SECTION ----------------------------------
+const num = 123;
+num.toUpperCase()
 
 const proj1 = {
   title: 'Multi Post Stories',
