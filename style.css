@@ -341,7 +341,6 @@ body {
   display: flex;
   width: 23rem;
   flex-direction: column;
-  margin-bottom: 0;
   background-image: url("images/card_works_background.png");
   background-repeat: no-repeat;
   margin: 2rem;
@@ -935,10 +934,6 @@ body {
     width: 42%;
     height: auto;
     margin: 0;
-  }
-
-  .recent-works-tech {
-    margin: 24px 0 0 24px;
   }
 
   .recent-works-button {
