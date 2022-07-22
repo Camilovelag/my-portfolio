@@ -832,6 +832,7 @@ body {
     height: auto;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 0.75rem;
   }
 
   .popup-content-container {

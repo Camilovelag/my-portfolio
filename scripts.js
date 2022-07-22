@@ -126,6 +126,7 @@ const proj1 = {
   title: 'Multi Post Stories',
   img: './images/popup-img.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  techList: ['Html', 'Bootstrap', 'Ruby on rails'],
 };
 
 const btn1 = document.querySelector('.project-1');
@@ -134,6 +135,9 @@ const popupOpen = document.querySelector('.popup');
 btn1.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = proj1.title;
+  document.getElementById('popup-techList1').innerHTML = proj1.techList[0];
+  document.getElementById('popup-techList2').innerHTML = proj1.techList[1];
+  document.getElementById('popup-techList3').innerHTML = proj1.techList[2];
   document.getElementById('popup-img').src = proj1.img;
   document.getElementById('popup-description').innerHTML = proj1.description;
   document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
