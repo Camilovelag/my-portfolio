@@ -116,15 +116,19 @@ const proj1 = {
   techList: ['Html', 'Bootstrap', 'Ruby on rails'],
 };
 
+const tech1 = proj1.techList[0];
+const tech2 = proj1.techList[1];
+const tech3 = proj1.techList[2];
+
 const btn1 = document.querySelector('.project-1');
 const popupOpen = document.querySelector('.popup');
 
 btn1.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = proj1.title;
-  document.getElementById('popup-techList1').innerHTML = proj1.techList[0];
-  document.getElementById('popup-techList2').innerHTML = proj1.techList[1];
-  document.getElementById('popup-techList3').innerHTML = proj1.techList[2];
+  document.getElementById('popup-techList1').innerHTML = tech1;
+  document.getElementById('popup-techList2').innerHTML = tech2;
+  document.getElementById('popup-techList3').innerHTML = tech3;
   document.getElementById('popup-img').src = proj1.img;
   document.getElementById('popup-description').innerHTML = proj1.description;
   document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
