@@ -93,32 +93,19 @@ const arr1 = [
   },
 ];
 
-if (window.matchMedia('(max-width: 768px)').matches) {
-  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works">  
-                <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
-                <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
-                <ul class="card-works-tech">
-                  <li class="card-works-tech-items">${items.popuptec[0]}</li>
-                  <li class="card-works-tech-items">${items.popuptec[1]}/li>
-                  <li class="card-works-tech-items">${items.popuptec[2]}</li>
-                  <li class="card-works-tech-items">${items.popuptec[3]}</li>
-                </ul>
-                <button class="card-works-button project-2" type="button">
-                  <a href="#popup">See Project</a>
-                </button>
-              </div>`).join('');
-} else {
-  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="card-works-alt background-2">
-                  <h2 class="card-works-title title-alt">${items.popuptitle}</h2>
-                  <p class="card-works-description description-alt">A${items.popupdescription}</p>
-                  <ul class="card-works-tech tech-alt">
-                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[0]}</li>
-                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[1]}</li>
-                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[2]}</li>
-                    <li class="card-works-tech-items tech-items-alt">${items.popuptec[3]}</li>
-                  </ul>
-                </div>`).join('');
-}
+document.getElementById('card-works-container').innerHTML = arr1.map((items) => `<div class="card-works">  
+              <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
+              <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
+              <ul class="card-works-tech">
+                <li class="card-works-tech-items">${items.popuptec[0]}</li>
+                <li class="card-works-tech-items">${items.popuptec[1]}/li>
+                <li class="card-works-tech-items">${items.popuptec[2]}</li>
+                <li class="card-works-tech-items">${items.popuptec[3]}</li>
+              </ul>
+              <button class="card-works-button project-2" type="button">
+                <a href="#popup">See Project</a>
+              </button>
+            </div>`).join('');
 
 // ---------------------------- OPEN POPUP WINDOW SECTION ----------------------------------
 
