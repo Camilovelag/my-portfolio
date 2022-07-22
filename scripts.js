@@ -1,6 +1,6 @@
 // ----------- TOGGLE MENU -----------
 
-// const arr test = [1 ,1 , 0];
+const arr test = [1 ,1 , 0];
 
 const hamburgerOpen = document.querySelector('.hamburger-btn');
 
@@ -55,7 +55,7 @@ menuContactUs.addEventListener('click', () => {
 });
 
 // ---------------------------- WORK CARDS INFO ----------------------------------
- pupet = 'cat';
+ pupet cat = 'cat';
 
 const arr1 = [
   {
