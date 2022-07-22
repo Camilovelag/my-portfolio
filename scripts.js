@@ -136,8 +136,8 @@ btn1.addEventListener('click', () => {
   document.getElementById('popup-title').innerHTML = proj1.title;
   document.getElementById('popup-img').src = proj1.img;
   document.getElementById('popup-description').innerHTML = proj1.description;
-  document.getElementById('popup-live').href = '';
-  document.getElementById('popup-source').href = '';
+  document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
+  document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
 });
 
 // ---------------------------- CLOSE POPUP ----------------------------------
