@@ -98,7 +98,7 @@ document.getElementById('card-works-container').innerHTML = arr1.map((items) => 
               <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
               <ul class="card-works-tech">
                 <li class="card-works-tech-items">${items.popuptec[0]}</li>
-                <li class="card-works-tech-items">${items.popuptec[1]}/li>
+                <li class="card-works-tech-items">${items.popuptec[1]}</li>
                 <li class="card-works-tech-items">${items.popuptec[2]}</li>
                 <li class="card-works-tech-items">${items.popuptec[3]}</li>
               </ul>

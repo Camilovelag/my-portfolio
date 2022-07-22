@@ -335,9 +335,6 @@ body {
 #card-works-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
 }
 
 .card-works {
@@ -347,6 +344,7 @@ body {
   margin-bottom: 0;
   background-image: url("images/card_works_background.png");
   background-repeat: no-repeat;
+  margin: 2rem;
 }
 
 .card-works-title {
@@ -870,7 +868,7 @@ body {
 
   /* ----------------pop up window for media query---------------- */
 
-  #Portfolio-menu {
+  #card-works-container {
     flex-direction: row;
   }
 
