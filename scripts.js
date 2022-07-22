@@ -102,9 +102,7 @@ document.getElementById('card-works-container').innerHTML = arr1.map((items) => 
                 <li class="card-works-tech-items">${items.popuptec[2]}</li>
                 <li class="card-works-tech-items">${items.popuptec[3]}</li>
               </ul>
-              <button class="card-works-button project-2" type="button">
-                <a href="#popup">See Project</a>
-              </button>
+                <a href="#popup" class="card-works-button project-2 project-${items.id}">See Project</a>
             </div>`).join('');
 
 // ---------------------------- OPEN POPUP WINDOW SECTION ----------------------------------
@@ -120,10 +118,10 @@ const tech1 = proj1.techList[0];
 const tech2 = proj1.techList[1];
 const tech3 = proj1.techList[2];
 
-const btn1 = document.querySelector('.project-1');
+const btn4 = document.querySelector('.project-4');
 const popupOpen = document.querySelector('.popup');
 
-btn1.addEventListener('click', () => {
+btn4.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = proj1.title;
   document.getElementById('popup-techList1').innerHTML = tech1;
@@ -135,13 +133,27 @@ btn1.addEventListener('click', () => {
   document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
 });
 
-// ---------------------------- CLOSE POPUP ----------------------------------
-
 const closePopupWindow = document.querySelector('.close-popup');
-
 closePopupWindow.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
 });
+
+const btn0 = document.querySelector('.project-0');
+
+btn0.addEventListener('click', () => {
+  popupOpen.classList.toggle('show-popup');
+  document.getElementById('popup-title').innerHTML = proj1.title;
+  document.getElementById('popup-techList1').innerHTML = tech1;
+  document.getElementById('popup-techList2').innerHTML = tech2;
+  document.getElementById('popup-techList3').innerHTML = tech3;
+  document.getElementById('popup-img').src = proj1.img;
+  document.getElementById('popup-description').innerHTML = proj1.description;
+  document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
+  document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
+});
+
+
+
 
 // -------------------------- FORM VALIDACION -----------------
 
