@@ -156,8 +156,7 @@ body {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 4vw 6vh 0;
-  height: auto;
+  height: 90vh;
   background: #fff;
   border: 1px solid #dfe1e6;
   padding: 16px;
@@ -398,8 +397,8 @@ body {
   letter-spacing: 0.75px;
   background: #ff6b00;
   border-style: none;
-  width: 327px;
-  height: 48px;
+  height: 3rem;
+  text-align: center;
 }
 
 .card-works-button:hover {

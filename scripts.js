@@ -60,7 +60,7 @@ const arr1 = [
     popuptitle: 'Multi-Post Stories',
     popupdescription: 'This is the first This is the firtst A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry standard dummy test number 1',
     popuptec: ['CSS', 'Html', 'Bootstrap', 'Ruby'],
-    popupimg: './pictures/golf.jpg',
+    popupimg: './images/card_works_background-alt-2.png',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
     btnName: 'btn1',
@@ -72,7 +72,7 @@ const arr1 = [
     popuptitle: 'Multi-Post Stories',
     popupdescription: 'This is the second A daily for this is a test and is test number 2',
     popuptec: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    popupimg: './pictures/beach.jpg',
+    popupimg: './images/card_works_background-alt-3.png',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
     btnName: 'btn3',
@@ -84,7 +84,7 @@ const arr1 = [
     popuptitle: 'Multi-Post Stories',
     popupdescription: 'This is the third A daily for this is a test and is test number 3',
     popuptec: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    popupimg: './pictures/desert.jpg',
+    popupimg: './images/card_works_background-alt-4.png',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
     btnName: 'btn4',
@@ -98,7 +98,7 @@ const lang2 = arr1[0].popuptec[1];
 const lang3 = arr1[0].popuptec[2];
 const lang4 = arr1[0].popuptec[3];
 
-document.getElementById('card-works-container').innerHTML = arr1.map((items) => `<div class="card-works">  
+document.getElementById('card-works-container').innerHTML = arr1.map((items) => `<div class="card-works" style="background-image: url('${items.popupimg}');">  
               <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
               <p class="card-works-description" id="card-works-description">${items.popupdescription}</p>
               <ul class="card-works-tech">
@@ -148,6 +148,34 @@ btn0.addEventListener('click', () => {
   document.getElementById('popup-techList3').innerHTML = lang3;
   document.getElementById('popup-img').src = arr1[0].popupimg;
   document.getElementById('popup-description').innerHTML = arr1[0].popupdescription;
+  document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
+  document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
+});
+
+const btn1 = document.querySelector('#project-1');
+
+btn1.addEventListener('click', () => {
+  popupOpen.classList.toggle('show-popup');
+  document.getElementById('popup-title').innerHTML = arr1[1].popuptitle;
+  document.getElementById('popup-techList1').innerHTML = lang1;
+  document.getElementById('popup-techList2').innerHTML = lang2;
+  document.getElementById('popup-techList3').innerHTML = lang3;
+  document.getElementById('popup-img').src = arr1[1].popupimg;
+  document.getElementById('popup-description').innerHTML = arr1[1].popupdescription;
+  document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
+  document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
+});
+
+const btn2 = document.querySelector('#project-2');
+
+btn2.addEventListener('click', () => {
+  popupOpen.classList.toggle('show-popup');
+  document.getElementById('popup-title').innerHTML = arr1[2].popuptitle;
+  document.getElementById('popup-techList1').innerHTML = lang1;
+  document.getElementById('popup-techList2').innerHTML = lang2;
+  document.getElementById('popup-techList3').innerHTML = lang3;
+  document.getElementById('popup-img').src = arr1[2].popupimg;
+  document.getElementById('popup-description').innerHTML = arr1[2].popupdescription;
   document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
   document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
 });
