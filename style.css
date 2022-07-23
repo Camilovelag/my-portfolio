@@ -401,7 +401,7 @@ body {
   letter-spacing: 0.75px;
   background: #ff6b00;
   border-style: none;
-  height: 3rem;
+  padding: 1rem;
   text-align: center;
 }
 
