@@ -314,6 +314,7 @@ body {
   border-style: none;
   width: fit-content;
   height: auto;
+  text-decoration-line: none;
 }
 
 .recent-works-button:hover {
@@ -403,6 +404,7 @@ body {
   border-style: none;
   padding: 1rem;
   text-align: center;
+  text-decoration-line: none;
 }
 
 .card-works-button:hover {
@@ -955,8 +957,7 @@ body {
   }
 
   .about-me {
-    padding: 0;
-    margin: 100px 100px 0;
+    padding: 10%;
     background-image: none;
     justify-content: flex-start;
     gap: 17px;
