@@ -96,7 +96,6 @@ const arr1 = [
 const lang1 = arr1[0].popuptec[0];
 const lang2 = arr1[0].popuptec[1];
 const lang3 = arr1[0].popuptec[2];
-const lang4 = arr1[0].popuptec[3];
 
 document.getElementById('card-works-container').innerHTML = arr1.map((items) => `<div class="card-works" style="background-image: url('${items.popupimg}');">  
               <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
@@ -184,8 +183,6 @@ const closePopupWindow = document.querySelector('.close-popup');
 closePopupWindow.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
 });
-
-
 
 // -------------------------- FORM VALIDACION -----------------
 
