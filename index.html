@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Camilo Vela Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <a id="header-logo" class="logo">Camilo Vela</a>
+        <nav class="nav-button">
+          <div class="links-container" id="links-container">
+            <a href="#recent-works" class="header-link link-1">Portfolio</a>
+            <a href="#about-me" class="header-link link-2">About</a>
+            <a href="#contact-us-container" class="header-link link-3">Contact</a>
+          </div>
+          <img class="mail-icon" src="images/icon_mail.png" alt="mail_icon">
+          <button class="hamburger-btn" id="hamburger-btn" type="button">
+          </button>
+        </nav>
+      </header>
+      <div class="headline">
+        <h1 class="primary-text main-headline">Hey There. I'm Camilo</h1>
+        <p class="supporting-text">I'm a Software Developer</p>
+        <h6 class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+          don't hestiate to contact me.</h6>
+        <ul class="social_media">
+          <li>
+            <a href="#">
+              <img src="images/Github_logo.png" alt="Github_logo" class="social_media_logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Linkedin_logo.png" alt="Linkedin_logo" class="social_media_logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Angellist_logo.png" alt="Angellist_logo" class="social_media_logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">            
+              <img src="images/Twitter_logo.png" alt="Twitter_logo" class="social_media_logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/Medium_logo.png" alt="Medium_logo" class="social_media_logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="popup" id="popup">
+      <div class="popup-title-container">
+        <h1 class="popup-title" id="popup-title">Heading</h1>
+        <button class="close-popup popup-btn" type="button"></button>
+      </div>
+      <ul class="recent-works-tech tech-alt">
+        <li class="recent-works-tech-items tech-items-alt" id="popup-techList1"></li>
+        <li class="recent-works-tech-items tech-items-alt" id="popup-techList2"></li>
+        <li class="recent-works-tech-items tech-items-alt" id="popup-techList3"></li>
+      </ul>
+      <div class="popup-content-container">
+        <img src="./images/popup-img.png" alt="" class="popup-img" id="popup-img">
+        <p class="popup-description" id="popup-description"></p>
+        <div class="btn-container">
+          <a class="popup-live recent-works-button submit-btn" href="#" id="popup-live">See Live<img src="images/see-live-icon.png" alt="Github_logo" class="social_media_logo"></a>
+          <a class="popup-source recent-works-button submit-btn" href="#" id="popup-source">See Source<img src="images/Github_logo.png" alt="Github_logo" class="social_media_logo"></a>
+        </div>
+      </div>
+    </div>
+    <section class="container-2">
+      <div class="title-container">
+        <h2 class="recent-works-title">My Recent Works</h2>
+        <img src="images/div-line.png" alt="div_line" class="div-line">
+      </div>
+      <div class="recent-works" id="recent-works">
+        <img src="images/img_placeholder.png" alt="img_placeholder" class="img-placeholder">
+        <h4 class="recent-works-supporting-text">Multi-Post Stories</h4>
+        <p class="recent-works-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <ul class="recent-works-tech tech-alt">
+          <li class="recent-works-tech-items tech-items-alt">css</li>
+          <li class="recent-works-tech-items tech-items-alt">html</li>
+          <li class="recent-works-tech-items tech-items-alt">bootstrap</li>
+          <li class="recent-works-tech-items tech-items-alt">Ruby</li>
+        </ul>
+          <a href="#popup" class="recent-works-button submit-btn" id="project-4">See Project</a>
+      </div> 
+    </section>
+
+
+    <div id="card-works-container" class="firstback"></div>
+    
+    <section class="container-3">
+      <div id="about-me" class="about-me">
+        <h2 class="about-me-title main-headline">About me</h2>
+        <p class="about-me-description description">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <button class="recent-works-button submit-btn" type="button">Get My Resume</button>
+      </div>
+      <div class="skills">
+        <ul class="skills-container">
+          <li class="language skill-title">Language          
+          <li class="skill">Javascript</li>
+          <li class="skill">Ruby</li>
+          <li class="skill">Html</li>
+          <li class="skill">Css</li>          
+        </ul>
+        <ul class="skills-container">
+          <li class="frameworks skill-title">Frameworks          
+          <li class="skill">Bootstrap</li>
+          <li class="skill">Ruby on Rails</li>
+          <li class="skill">RSPec</li>
+          <li class="skill">CapyBara</li>
+          <li class="skill">Selenium</li>
+        </ul>
+        <ul class="skills-container">
+          <li class="skill-list skill-title">Skills          
+          <li class="skill">Codekit</li>
+          <li class="skill">Github</li>
+          <li class="skill">Codepen</li>
+          <li class="skill">Gitlab</li>
+          <li class="skill">Terminal</li>          
+        </ul>
+      </div>
+    </section>
+    <footer class="contact-us">
+      <div id="contact-us-container" class="contact-us-container">
+        <h1 class="contact-us-description">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+        <form class="form" id="form" action="https://formspree.io/f/mvoljkrr" method="post">
+          <ul class="contact-us-list">
+            <li class="contact-us-full-name">
+              <input class="full-name input-field" type="text" id="full_name" name="full_name" placeholder="Full Name" required maxlength="30">
+            </li>
+            <li class="contact-us-name">
+              <input class="first-name input-field" type="text" id="first_name" name="first_name" placeholder="First Name" maxlength="30">
+            </li>
+            <li class="contact-us-name">
+              <input class="last-name input-field" type="text" id="last_name" name="last_name" placeholder="Last Name" maxlength="30">
+            </li>
+            <li class="contact-us-email">
+              <input class="email input-field" type="email" id="email" name="email" placeholder="Email Address" required>
+            </li>
+            <li class="contact-us-text-area">
+              <textarea class="text-area input-field" name="message" id="textarea" maxlength="500" placeholder="Enter text here" required></textarea>
+            </li>
+            <li id="error-msg"></li>
+            <li class="contact-us-list-item">
+              <button type="submit" class="contact-us-button submit-btn" id="submit-btn">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="footer-icons">
+        <ul class="social-media_footer">
+          <li>
+            <a href="#"> <img src="images/Github_logo.png" alt="Github_logo" class="social_media_logo"> </a>
+          </li> 
+          <li>
+            <a href="#"> <img src="images/Linkedin_logo.png" alt="Linkedin_logo" class="social_media_logo"> </a>
+          </li>
+          <li>
+            <a href="#"> <img src="images/Angellist_logo.png" alt="Angellist_logo" class="social_media_logo"> </a>          
+          </li> 
+          <li>
+            <a href="#"> <img src="images/Twitter_logo.png" alt="Twitter_logo" class="social_media_logo"> </a>          
+          </li>
+          <li>
+            <a href="#"> <img src="images/Medium_logo.png" alt="Medium_logo" class="social_media_logo"> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
