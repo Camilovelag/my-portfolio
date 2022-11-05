@@ -12,7 +12,7 @@
 
 ## 🌐 Link for webpage
 
-To visit my webpage, please click on the link (https://camilovelag.github.io/MV_Portfolio/).
+To visit my webpage, please click on the link (https://camilovelag.github.io/my-portfolio/).
 
 
 ## Authors
