@@ -219,14 +219,15 @@ body {
 .container-2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .recent-works {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
-  margin-left: 24px;
-  margin-top: 24px;
+  align-items: center;
+  max-width: 350px;
+  margin: 1rem 0;
 }
 
 .recent-works-title {
@@ -252,34 +253,24 @@ body {
 }
 
 .img-placeholder {
-  padding-top: 80px;
-  padding-bottom: 0;
-  width: 327px;
-  height: 237px;
+  max-width: 350px;
 }
 
 .recent-works-supporting-text {
   color: #091e42;
-  width: 327px;
-  height: 36px;
   font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 44px;
   font-weight: 400;
-  margin-top: 24px;
 }
 
 .recent-works-description {
   color: #091e42;
-  width: 327px;
-  height: 147px;
   font-family: 'Inter', serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-align: justify;
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
 .recent-works-tech {
