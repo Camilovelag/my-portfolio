@@ -10,7 +10,8 @@ body {
   background: #1c1a19;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
-  background-position: 228px 318px;
+  background-attachment: absolute;
+  background-position: right bottom;
 }
 
 .header {
@@ -155,8 +156,8 @@ body {
   padding: 1rem;
   visibility: hidden;
   position: fixed;
-  top: 2vh;
-  left: 4vw;
+  top: 4vh;
+  left: 6vw;
   margin: auto;
   gap: 1rem;
 }
@@ -178,9 +179,9 @@ body {
   border-style: none;
   background: url("images/close-icon.png") no-repeat;
   cursor: pointer;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .popup-title {
@@ -580,6 +581,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.contact-us-list > li {
+  list-style: none;
 }
 
 .contact-us-description {
