@@ -57,36 +57,36 @@ menuContactUs.addEventListener('click', () => {
 const arr1 = [
   {
     id: 0,
-    popuptitle: 'Multi-Post Stories',
-    popupdescription: 'This is the first This is the firtst A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry standard dummy test number 1',
-    popuptec: ['CSS', 'Html', 'Bootstrap', 'Ruby'],
-    popupimg: './images/card_works_background-alt-2.png',
-    btnlive: 'https://www.github.com',
-    btnsource: 'https://www.github.com',
+    popuptitle: 'Doctor Reservations Back-end',
+    popupdescription: 'Concise and well-documented API to manage doctors, logins, and reservations.',
+    popuptec: ['Ruby on Rails', 'PostgreSQL', 'Swagger'],
+    popupimg: './images/thumbnails/thumbnail-doctors-backend.jpg',
+    btnlive: 'https://doctors-reservations-rily.onrender.com/api-docs/index.html',
+    btnsource: 'https://github.com/Camilovelag/Doctors-Reservations-Backend',
     btnName: 'btn1',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
   },
   {
     id: 1,
-    popuptitle: 'Multi-Post Stories',
-    popupdescription: 'This is the second A daily for this is a test and is test number 2',
-    popuptec: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    popupimg: './images/card_works_background-alt-3.png',
-    btnlive: 'https://www.github.com',
-    btnsource: 'https://www.github.com',
+    popuptitle: 'My Awesome Budget App',
+    popupdescription: 'A simple and handsome app to manage your budget with attractive UI and intuitive UX.',
+    popuptec: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap'],
+    popupimg: './images/thumbnails/thumbnail-awesome-budget.jpg',
+    btnlive: 'https://github.com/Camilovelag/my-awesome-budget-app',
+    btnsource: 'https://my-awesome-budget-app.onrender.com/',
     btnName: 'btn3',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
   },
   {
     id: 2,
-    popuptitle: 'Multi-Post Stories',
-    popupdescription: 'This is the third A daily for this is a test and is test number 3',
-    popuptec: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    popupimg: './images/card_works_background-alt-4.png',
-    btnlive: 'https://www.github.com',
-    btnsource: 'https://www.github.com',
+    popuptitle: 'Awesome Recipes',
+    popupdescription: 'This is a simple recipe app that allows you to search for a delightful recipe by name, and choose one based on its popularity and ratings.',
+    popuptec: ['React', 'Redux', 'Bootstrap'],
+    popupimg: './images/thumbnails/thumbnail-awesome_recipes.jpg',
+    btnlive: 'https://camilovelag-awesome-recipes.netlify.app',
+    btnsource: 'https://github.com/Camilovelag/awesome-recipes',
     btnName: 'btn4',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
@@ -96,6 +96,7 @@ const arr1 = [
 const lang1 = arr1[0].popuptec[0];
 const lang2 = arr1[0].popuptec[1];
 const lang3 = arr1[0].popuptec[2];
+const langStack1 = arr1[0].popuptec;
 
 document.getElementById('card-works-container').innerHTML = arr1.map((items) => `<div class="card-works" style="background-image: url('${items.popupimg}');">  
               <h2 class="card-works-title" id="card-works-title">${items.popuptitle}</h2>
@@ -142,13 +143,13 @@ const btn0 = document.querySelector('#project-0');
 btn0.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = arr1[0].popuptitle;
-  document.getElementById('popup-techList1').innerHTML = lang1;
-  document.getElementById('popup-techList2').innerHTML = lang2;
-  document.getElementById('popup-techList3').innerHTML = lang3;
-  document.getElementById('popup-img').src = 'images/img_placeholder.png';
+  document.getElementById('popup-techList1').innerHTML = arr1[0].popuptec[0];
+  document.getElementById('popup-techList2').innerHTML = arr1[0].popuptec[1];
+  document.getElementById('popup-techList3').innerHTML = arr1[0].popuptec[2];
+  document.getElementById('popup-img').src = arr1[0].popupimg;
   document.getElementById('popup-description').innerHTML = arr1[0].popupdescription;
-  document.getElementById('popup-live').href = 'https://flunavgt.github.io/Federico-s_Portfolio/';
-  document.getElementById('popup-source').href = 'https://github.com/Camilovelag/MV_Portfolio';
+  document.getElementById('popup-live').href = arr1[0].btnlive;
+  document.getElementById('popup-source').href = arr1[0].btnsource;
 });
 
 const btn1 = document.querySelector('#project-1');
