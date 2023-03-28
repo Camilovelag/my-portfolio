@@ -1,6 +1,4 @@
 body {
-  width: 375px;
-  height: 682px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,8 +7,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 375px;
-  height: 682px;
   background: #1c1a19;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
@@ -22,7 +18,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 375px;
   height: 92px;
   padding: 1rem;
 }
@@ -91,7 +86,6 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  width: 375px;
   height: 590px;
 }
 
@@ -223,13 +217,12 @@ body {
 /* --------------------POPUP WINDOW-------------------- */
 
 .container-2 {
-  display: grid;
-  width: 375px;
+  display: flex;
+  flex-direction: column;
 }
 
 .recent-works {
   display: flex;
-  width: 375px;
   flex-direction: column;
   margin-bottom: 0;
   margin-left: 24px;
@@ -238,13 +231,19 @@ body {
 
 .recent-works-title {
   color: #1c1a19;
-  width: 327px;
-  height: 83px;
   font-family: 'Crete Round', serif;
   font-size: 40px;
   line-height: 52px;
   font-weight: 400;
-  margin: 120px 0 0;
+}
+
+.title-container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .div-line {
@@ -343,9 +342,7 @@ body {
 
 .card-works {
   display: flex;
-  width: 23rem;
   flex-direction: column;
-  background-image: url("images/card_works_background.png");
   background-repeat: no-repeat;
   margin: 2rem;
 }
@@ -888,12 +885,11 @@ body {
     height: auto;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
   }
 
   .recent-works-title {
     color: #091e42;
-    width: auto;
-    height: auto;
     font-size: 28px;
     line-height: 52px;
     margin: 0;
