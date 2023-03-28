@@ -18,8 +18,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 92px;
+  height: 50px;
   padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .logo {
@@ -29,6 +33,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-left: 12px;
+  text-decoration: none;
 }
 
 .active-logo {
@@ -47,27 +52,30 @@ body {
   margin-left: 12px;
   background: url(images/open-icon.png) no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .switch-btn {
   background: url(images/close-icon.png) no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .links-container {
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: 0;
-  top: -140%;
+  left: -120%;
+  top: 60px;
   padding: 1rem;
-  width: 375px;
+  width: 100%;
   height: 100%;
   background-color: #3c3a39;
+  transition: 0.3s;
 }
 
 .active-menu {
-  top: 120px;
+  left: 0;
 }
 
 .nav-button a {
@@ -87,20 +95,17 @@ body {
   display: flex;
   flex-direction: column;
   height: 590px;
+  padding: 6rem 1rem 0;
 }
 
 .primary-text {
   color: #ff6b00;
-  width: 327px;
   height: 124px;
   font-family: 'Crete Round', serif;
   font-size: 56px;
   letter-spacing: 0.37px;
   line-height: 64px;
   font-weight: 400;
-  margin-top: 120px;
-  margin-left: 24px;
-  margin-bottom: 0;
 }
 
 .supporting-text {
@@ -111,9 +116,6 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  margin-top: 12px;
-  margin-left: 24px;
-  margin-bottom: 0;
 }
 
 .description {
@@ -124,9 +126,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 12px;
-  margin-left: 24px;
-  margin-bottom: 0;
 }
 
 .social_media {
@@ -178,8 +177,10 @@ body {
   width: 1rem;
   border-style: none;
   background: url("images/close-icon.png") no-repeat;
-  margin-right: 14px;
   cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
 }
 
 .popup-title {
@@ -189,7 +190,7 @@ body {
   font-size: 2rem;
   line-height: 2.75rem;
   color: #172b4d;
-  margin: 0;
+  margin: 0 2rem 0 0;
 }
 
 .popup-content-container {
@@ -234,7 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
+  max-width: 320px;
   margin: 2rem;
   transition: 0.3s;
 }
@@ -262,7 +263,7 @@ body {
 }
 
 .img-placeholder {
-  max-width: 350px;
+  max-width: 320px;
 }
 
 .recent-works-supporting-text {
@@ -271,6 +272,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   font-weight: 400;
+  margin: 0.5rem 0;
 }
 
 .recent-works-description {
@@ -294,7 +296,7 @@ body {
 .recent-works-tech-items {
   color: #091e42;
   font-family: 'Inter', serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 500;
   padding: 10px 12px 10px 12px;
@@ -339,7 +341,7 @@ body {
 #card-works-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .card-works {
@@ -349,6 +351,8 @@ body {
   background-size: cover;
   background-color: rgb(0, 0, 0, 0.7);
   background-blend-mode: multiply;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .card-works-title {
@@ -365,19 +369,16 @@ body {
 
 .card-works-description {
   color: #fff;
-  width: 295px;
-  height: 87px;
   font-family: 'Inter', serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 12px;
-  margin-left: 16px;
+  padding: 1rem;
 }
 
 .card-works-tech {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 12px;
   height: 40px;
@@ -387,7 +388,7 @@ body {
 .card-works-tech-items {
   color: #fff;
   font-family: 'Inter', serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 500;
   padding: 10px 12px 10px 12px;
@@ -466,8 +467,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: -24px;
-  width: 327px;
   height: 148px;
 }
 
@@ -600,7 +599,6 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  width: 375px;
 }
 
 .contact-us-full-name {
@@ -610,7 +608,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   border-bottom: 1px solid #dbd8d7;
-  width: 295px;
   padding: 14px;
   margin: 0 24px 0 24px;
   list-style: none;
@@ -623,7 +620,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   border-bottom: 1px solid #dbd8d7;
-  width: 295px;
   padding: 14px;
   margin: 0 24px 0 24px;
   list-style: none;
@@ -641,10 +637,10 @@ body {
   font-weight: 400;
   border-style: none;
   background-color: #fbf8f7;
-  width: 295px;
   height: 114px;
   margin: 24px;
   padding: 12px;
+  width: 80%;
 }
 
 .contact-us-button {
