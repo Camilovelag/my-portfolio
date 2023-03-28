@@ -148,17 +148,18 @@ body {
 .popup {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 84vw;
-  height: auto;
   background: #fff;
   border: 1px solid #dfe1e6;
-  padding: 16px;
+  padding: 1rem;
   visibility: hidden;
   position: fixed;
-  top: 5vh;
-  left: 5vw;
+  top: 2vh;
+  left: 4vw;
+  margin: auto;
+  gap: 1rem;
 }
 
 .show-popup {
@@ -178,6 +179,7 @@ body {
   border-style: none;
   background: url("images/close-icon.png") no-repeat;
   margin-right: 14px;
+  cursor: pointer;
 }
 
 .popup-title {
@@ -190,9 +192,15 @@ body {
   margin: 0;
 }
 
+.popup-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .popup-img {
-  width: 100%;
-  height: auto;
+  height: 30vh;
+  width: 90%;
+  object-fit: contain;
   align-self: center;
 }
 
@@ -229,10 +237,6 @@ body {
   max-width: 350px;
   margin: 2rem;
   transition: 0.3s;
-}
-
-.recent-works:hover {
-  transform: scale(1.10);
 }
 
 .recent-works-title {
@@ -296,6 +300,8 @@ body {
   padding: 10px 12px 10px 12px;
   list-style: none;
   border: 1px solid #8993a4;
+  height: fit-content;
+  text-align: center;
 }
 
 .recent-works-button {
@@ -343,13 +349,7 @@ body {
   background-size: cover;
   background-color: rgb(0, 0, 0, 0.7);
   background-blend-mode: multiply;
-  transition: 0.3s;
 }
-
-.card-works:hover {
-  transform: scale(1.10);
-  background-color: rgb(0, 0, 0, 0.2);
-  background-blend-mode: multiply;}
 
 .card-works-title {
   color: #fff;
@@ -881,6 +881,15 @@ body {
     flex-direction: row;
   }
 
+  .card-works {
+    transition: 0.3s;
+  }
+  
+  .card-works:hover {
+    transform: scale(1.10);
+    background-color: rgb(0, 0, 0, 0.2);
+    background-blend-mode: multiply;}
+
   .container-2 {
     margin: 90px 100px 0;
     width: auto;
@@ -924,6 +933,11 @@ body {
     height: 320px;
     width: auto;
     gap: 17px;
+    transition: 0.3s;
+  }
+  
+  .recent-works:hover {
+    transform: scale(1.10);
   }
 
   .recent-works-supporting-text {
