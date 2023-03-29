@@ -19,6 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 50px;
+
   /* padding: 1rem; */
   position: fixed;
   left: 0;
@@ -302,7 +303,6 @@ body {
   padding: 10px 12px 10px 12px;
   list-style: none;
   border: 1px solid #8993a4;
-  height: fit-content;
   text-align: center;
 }
 
@@ -397,7 +397,6 @@ body {
   padding: 10px 12px 10px 12px;
   list-style: none;
   background: rgba(255, 255, 255, 0.24);
-  height: fit-content;
   text-align: center;
 }
 
@@ -447,7 +446,6 @@ body {
   padding: 0 1rem 190px;
   background-image: url("images/Frame.png");
   background-repeat: no-repeat;
-  background-attachment: absolute;
   background-position: right center;
   display: flex;
   flex-direction: column;
@@ -873,10 +871,11 @@ body {
   .card-works {
     transition: 0.3s;
   }
-  
+
   .card-works:hover {
     background-color: rgb(0, 0, 0, 0.2);
-    background-blend-mode: multiply;}
+    background-blend-mode: multiply;
+  }
 
   .container-2 {
     margin: 90px 100px 0;
@@ -942,13 +941,13 @@ body {
     width: 42%;
     height: auto;
     margin: 0;
-    text-align: left;
   }
 
   .recent-works-button {
     margin: 0;
     align-self: center;
   }
+
   .container-3 {
     width: 100%;
     height: auto;

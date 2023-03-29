@@ -109,20 +109,16 @@ const proj1 = {
   btnimg2: './pictures/TimeAndIcons/github.png',
 };
 
-
-const tech1 = proj1.popuptec[0];
-const tech2 = proj1.popuptec[1];
-const tech3 = proj1.popuptec[2];
-
 const btn4 = document.querySelector('#project-4');
 const popupOpen = document.querySelector('.popup');
+const { 0: tech0a, 1: tech0b, 2: tech0c } = proj1.popuptec;
 
 btn4.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = proj1.popuptitle;
-  document.getElementById('popup-techList1').innerHTML = tech1;
-  document.getElementById('popup-techList2').innerHTML = tech2;
-  document.getElementById('popup-techList3').innerHTML = tech3;
+  document.getElementById('popup-techList1').innerHTML = tech0a;
+  document.getElementById('popup-techList2').innerHTML = tech0b;
+  document.getElementById('popup-techList3').innerHTML = tech0c;
   document.getElementById('popup-img').src = proj1.popupimg;
   document.getElementById('popup-description').innerHTML = proj1.popupdescription;
   document.getElementById('popup-live').href = proj1.btnlive;
@@ -130,13 +126,14 @@ btn4.addEventListener('click', () => {
 });
 
 const btn0 = document.querySelector('#project-0');
+const { 0: tech1a, 1: tech1b, 2: tech1c } = arr1[0].popuptec;
 
 btn0.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = arr1[0].popuptitle;
-  document.getElementById('popup-techList1').innerHTML = arr1[0].popuptec[0];
-  document.getElementById('popup-techList2').innerHTML = arr1[0].popuptec[1];
-  document.getElementById('popup-techList3').innerHTML = arr1[0].popuptec[2];
+  document.getElementById('popup-techList1').innerHTML = tech1a;
+  document.getElementById('popup-techList2').innerHTML = tech1b;
+  document.getElementById('popup-techList3').innerHTML = tech1c;
   document.getElementById('popup-img').src = arr1[0].popupimg;
   document.getElementById('popup-description').innerHTML = arr1[0].popupdescription;
   document.getElementById('popup-live').href = arr1[0].btnlive;
@@ -144,13 +141,14 @@ btn0.addEventListener('click', () => {
 });
 
 const btn1 = document.querySelector('#project-1');
+const { 0: tech2a, 1: tech2b, 2: tech2c } = arr1[1].popuptec;
 
 btn1.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = arr1[1].popuptitle;
-  document.getElementById('popup-techList1').innerHTML = arr1[1].popuptec[0];
-  document.getElementById('popup-techList2').innerHTML = arr1[1].popuptec[1];
-  document.getElementById('popup-techList3').innerHTML = arr1[1].popuptec[2];
+  document.getElementById('popup-techList1').innerHTML = tech2a;
+  document.getElementById('popup-techList2').innerHTML = tech2b;
+  document.getElementById('popup-techList3').innerHTML = tech2c;
   document.getElementById('popup-img').src = arr1[1].popupimg;
   document.getElementById('popup-description').innerHTML = arr1[1].popupdescription;
   document.getElementById('popup-live').href = arr1[1].btnlive;
@@ -158,13 +156,14 @@ btn1.addEventListener('click', () => {
 });
 
 const btn2 = document.querySelector('#project-2');
+const { 0: tech3a, 1: tech3b, 2: tech3c } = arr1[2].popuptec;
 
 btn2.addEventListener('click', () => {
   popupOpen.classList.toggle('show-popup');
   document.getElementById('popup-title').innerHTML = arr1[2].popuptitle;
-  document.getElementById('popup-techList1').innerHTML = arr1[2].popuptec[0];
-  document.getElementById('popup-techList2').innerHTML = arr1[2].popuptec[1];
-  document.getElementById('popup-techList3').innerHTML = arr1[2].popuptec[2];
+  document.getElementById('popup-techList1').innerHTML = tech3a;
+  document.getElementById('popup-techList2').innerHTML = tech3b;
+  document.getElementById('popup-techList3').innerHTML = tech3c;
   document.getElementById('popup-img').src = arr1[2].popupimg;
   document.getElementById('popup-description').innerHTML = arr1[2].popupdescription;
   document.getElementById('popup-live').href = arr1[2].btnlive;
