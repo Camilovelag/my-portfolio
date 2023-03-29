@@ -6,7 +6,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background: #023047;
+  background: #14213d;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -29,8 +29,8 @@ body {
 
 .logo {
   color: #fff;
-  font-family: 'Roboto', serif;
-  font-size: 18px;
+  font-family: 'Inter', serif;
+  font-size: 1.2rem;
   line-height: 24px;
   font-weight: 700;
   margin-left: 12px;
@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   font-family: 'Inter', serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,8 +121,6 @@ body {
 
 .description {
   color: #fff;
-  width: 327px;
-  height: 123px;
   font-family: 'Poppins', serif;
   font-size: 16px;
   line-height: 24px;
@@ -437,7 +435,7 @@ body {
 .container-3 {
   display: flex;
   flex-direction: column;
-  background-color: #023047;
+  background-color: #14213d;
   margin-top: 120px;
 }
 
@@ -449,6 +447,7 @@ body {
   background-position: right center;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about-me-title {
@@ -469,7 +468,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  height: 148px;
 }
 
 .submit-btn {
@@ -728,7 +726,7 @@ body {
   .logo {
     color: #fff;
     font-family: 'Inter', serif;
-    font-size: 14px;
+    font-size: 1.2rem;
     line-height: 14px;
     font-weight: 700;
   }
@@ -743,7 +741,7 @@ body {
   .nav-button a {
     color: #fff;
     font-family: 'Inter', serif;
-    font-size: 10px;
+    font-size: 1rem;
     line-height: 17px;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -774,7 +772,7 @@ body {
   }
 
   .headline {
-    width: 420px;
+    width: 60vw;
     flex-wrap: wrap;
   }
 
@@ -813,7 +811,7 @@ body {
 
   .description {
     color: #f4f5f7;
-    width: 90%;
+    width: 80%;
     font-family: 'Inter', serif;
     font-size: 14px;
     line-height: 22px;
@@ -949,12 +947,10 @@ body {
   }
 
   .container-3 {
-    width: 100%;
-    height: auto;
-    background-color: #023047;
+    background-color: #14213d;
     background-image: url("images/Frame_desktop.png");
     background-repeat: no-repeat;
-    background-size: auto 30%;
+    background-size: 50%;
     background-position: 100% 10%;
     margin: 0;
   }
@@ -974,8 +970,7 @@ body {
 
   .about-me-description {
     margin: 0;
-    width: 396px;
-    height: auto;
+    width: 60vw;
   }
 
   .submit-btn {
