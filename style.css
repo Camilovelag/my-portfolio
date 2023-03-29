@@ -1,7 +1,4 @@
 body {
-  width: 375px;
-  height: 682px;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,22 +6,24 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 375px;
-  height: 682px;
   background: #1c1a19;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
-  background-position: 228px 318px;
+  background-position: right bottom;
+  background-size: 50%;
 }
 
 .header {
   background: #3c3a39;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  width: 375px;
-  height: 92px;
-  padding: 1rem;
+  align-items: center;
+  height: 50px;
+  /* padding: 1rem; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .logo {
@@ -34,6 +33,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-left: 12px;
+  text-decoration: none;
 }
 
 .active-logo {
@@ -52,27 +52,30 @@ body {
   margin-left: 12px;
   background: url(images/open-icon.png) no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .switch-btn {
   background: url(images/close-icon.png) no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .links-container {
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: 0;
-  top: -140%;
+  left: -120%;
+  top: 50px;
   padding: 1rem;
-  width: 375px;
+  width: 100%;
   height: 100%;
   background-color: #3c3a39;
+  transition: 0.3s;
 }
 
 .active-menu {
-  top: 120px;
+  left: 0;
 }
 
 .nav-button a {
@@ -91,22 +94,18 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  width: 375px;
   height: 590px;
+  padding: 6rem 1rem 0;
 }
 
 .primary-text {
   color: #ff6b00;
-  width: 327px;
   height: 124px;
   font-family: 'Crete Round', serif;
   font-size: 56px;
   letter-spacing: 0.37px;
   line-height: 64px;
   font-weight: 400;
-  margin-top: 120px;
-  margin-left: 24px;
-  margin-bottom: 0;
 }
 
 .supporting-text {
@@ -117,9 +116,6 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  margin-top: 12px;
-  margin-left: 24px;
-  margin-bottom: 0;
 }
 
 .description {
@@ -130,9 +126,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 12px;
-  margin-left: 24px;
-  margin-bottom: 0;
 }
 
 .social_media {
@@ -154,17 +147,18 @@ body {
 .popup {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 84vw;
-  height: auto;
   background: #fff;
   border: 1px solid #dfe1e6;
-  padding: 16px;
+  padding: 1rem;
   visibility: hidden;
   position: fixed;
-  top: 5vh;
-  left: 5vw;
+  top: 4vh;
+  left: 6vw;
+  margin: auto;
+  gap: 1rem;
 }
 
 .show-popup {
@@ -183,7 +177,10 @@ body {
   width: 1rem;
   border-style: none;
   background: url("images/close-icon.png") no-repeat;
-  margin-right: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .popup-title {
@@ -193,12 +190,18 @@ body {
   font-size: 2rem;
   line-height: 2.75rem;
   color: #172b4d;
-  margin: 0;
+  margin: 0 2rem 0 0;
+}
+
+.popup-content-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-img {
-  width: 100%;
-  height: auto;
+  height: 30vh;
+  width: 90%;
+  object-fit: contain;
   align-self: center;
 }
 
@@ -223,28 +226,35 @@ body {
 /* --------------------POPUP WINDOW-------------------- */
 
 .container-2 {
-  display: grid;
-  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .recent-works {
   display: flex;
-  width: 375px;
   flex-direction: column;
-  margin-bottom: 0;
-  margin-left: 24px;
-  margin-top: 24px;
+  align-items: center;
+  max-width: 320px;
+  margin: 2rem;
+  transition: 0.3s;
 }
 
 .recent-works-title {
   color: #1c1a19;
-  width: 327px;
-  height: 83px;
   font-family: 'Crete Round', serif;
   font-size: 40px;
   line-height: 52px;
   font-weight: 400;
-  margin: 120px 0 0;
+}
+
+.title-container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .div-line {
@@ -253,34 +263,25 @@ body {
 }
 
 .img-placeholder {
-  padding-top: 80px;
-  padding-bottom: 0;
-  width: 327px;
-  height: 237px;
+  max-width: 320px;
 }
 
 .recent-works-supporting-text {
   color: #091e42;
-  width: 327px;
-  height: 36px;
   font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 44px;
   font-weight: 400;
-  margin-top: 24px;
+  margin: 0.5rem 0;
 }
 
 .recent-works-description {
   color: #091e42;
-  width: 327px;
-  height: 147px;
   font-family: 'Inter', serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-align: justify;
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
 .recent-works-tech {
@@ -295,12 +296,14 @@ body {
 .recent-works-tech-items {
   color: #091e42;
   font-family: 'Inter', serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 500;
   padding: 10px 12px 10px 12px;
   list-style: none;
   border: 1px solid #8993a4;
+  height: fit-content;
+  text-align: center;
 }
 
 .recent-works-button {
@@ -315,6 +318,7 @@ body {
   width: fit-content;
   height: auto;
   text-decoration-line: none;
+  transition: 0.3s;
 }
 
 .recent-works-button:hover {
@@ -338,16 +342,20 @@ body {
 #card-works-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .card-works {
   display: flex;
-  width: 23rem;
   flex-direction: column;
-  background-image: url("images/card_works_background.png");
-  background-repeat: no-repeat;
+  justify-content: flex-end;
   margin: 2rem;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  min-width: 300px;
+  max-width: 400px;
+  height: 480px;
 }
 
 .card-works-title {
@@ -364,33 +372,33 @@ body {
 
 .card-works-description {
   color: #fff;
-  width: 295px;
-  height: 87px;
   font-family: 'Inter', serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 12px;
-  margin-left: 16px;
+  padding: 1rem;
 }
 
 .card-works-tech {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 12px;
   height: 40px;
-  padding-left: 16px;
+  padding: 1rem;
 }
 
 .card-works-tech-items {
   color: #fff;
   font-family: 'Inter', serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 500;
   padding: 10px 12px 10px 12px;
   list-style: none;
   background: rgba(255, 255, 255, 0.24);
+  height: fit-content;
+  text-align: center;
 }
 
 .card-works-button {
@@ -405,6 +413,8 @@ body {
   padding: 1rem;
   text-align: center;
   text-decoration-line: none;
+  transition: 0.2s;
+  justify-self: flex-end;
 }
 
 .card-works-button:hover {
@@ -434,11 +444,11 @@ body {
 
 .about-me {
   border-bottom: 1px solid #fff;
-  padding-bottom: 190px;
-  margin-left: 24px;
+  padding: 0 1rem 190px;
   background-image: url("images/Frame.png");
   background-repeat: no-repeat;
-  background-position: 100% 95%;
+  background-attachment: absolute;
+  background-position: right center;
   display: flex;
   flex-direction: column;
 }
@@ -461,8 +471,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: -24px;
-  width: 327px;
   height: 148px;
 }
 
@@ -576,6 +584,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.contact-us-list > li {
+  list-style: none;
 }
 
 .contact-us-description {
@@ -595,7 +608,6 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  width: 375px;
 }
 
 .contact-us-full-name {
@@ -605,7 +617,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   border-bottom: 1px solid #dbd8d7;
-  width: 295px;
   padding: 14px;
   margin: 0 24px 0 24px;
   list-style: none;
@@ -618,7 +629,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   border-bottom: 1px solid #dbd8d7;
-  width: 295px;
   padding: 14px;
   margin: 0 24px 0 24px;
   list-style: none;
@@ -636,10 +646,10 @@ body {
   font-weight: 400;
   border-style: none;
   background-color: #fbf8f7;
-  width: 295px;
   height: 114px;
   margin: 24px;
   padding: 12px;
+  width: 80%;
 }
 
 .contact-us-button {
@@ -691,7 +701,6 @@ body {
   justify-content: space-between;
   padding: 0;
   margin-top: 12px;
-  margin-left: 24px;
   margin-bottom: 0;
   list-style-type: none;
   filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
@@ -709,25 +718,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-  }
-
   .container {
-    width: 100%;
     background-image: url("images/Illustration-header.png");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: 100% 0%;
   }
 
   .header {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 50px;
   }
 
   .logo {
@@ -736,17 +733,13 @@ body {
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
-    position: static;
-    margin: 0 0 0 10%;
-    padding: 18px 0;
   }
 
   .nav-button {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10% 0 0;
+    width: 45%;
   }
 
   .nav-button a {
@@ -767,10 +760,9 @@ body {
   .links-container {
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: static;
     padding: 0;
-    width: auto;
-    height: auto;
+    justify-self: center;
   }
 
   .active-menu {
@@ -853,8 +845,8 @@ body {
   }
 
   .popup-img {
-    width: 100%;
-    height: auto;
+    height: 60vh;
+    object-fit: contain;
     grid-row: 1/3;
   }
 
@@ -874,7 +866,17 @@ body {
 
   #card-works-container {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  .card-works {
+    transition: 0.3s;
+  }
+  
+  .card-works:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+    background-blend-mode: multiply;}
 
   .container-2 {
     margin: 90px 100px 0;
@@ -888,12 +890,11 @@ body {
     height: auto;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
   }
 
   .recent-works-title {
     color: #091e42;
-    width: auto;
-    height: auto;
     font-size: 28px;
     line-height: 52px;
     margin: 0;
@@ -916,10 +917,11 @@ body {
 
   .recent-works {
     flex-flow: column wrap;
-    margin: 0;
     height: 320px;
-    width: auto;
     gap: 17px;
+    transition: 0.3s;
+    max-width: none;
+    align-items: flex-start;
   }
 
   .recent-works-supporting-text {
@@ -928,6 +930,7 @@ body {
     line-height: 36px;
     height: auto;
     margin: 0;
+    order: -1;
   }
 
   .recent-works-description {
@@ -939,12 +942,13 @@ body {
     width: 42%;
     height: auto;
     margin: 0;
+    text-align: left;
   }
 
   .recent-works-button {
     margin: 0;
+    align-self: center;
   }
-
   .container-3 {
     width: 100%;
     height: auto;
@@ -978,8 +982,8 @@ body {
   .submit-btn {
     letter-spacing: 0.03em;
     background: #f55800;
-    padding: 6px 7px;
-    font-size: 12px;
+    padding: 0.8rem;
+    font-size: 1rem;
     line-height: 17px;
     width: fit-content;
     height: auto;
@@ -997,7 +1001,7 @@ body {
   }
 
   .skills-container {
-    width: 160px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1033,6 +1037,7 @@ body {
     margin: 10px 0 0;
     font-size: 15px;
     line-height: 30px;
+    text-align: left;
   }
 
   .contact-us {
