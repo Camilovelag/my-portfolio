@@ -700,7 +700,6 @@ body {
   justify-content: space-between;
   padding: 0;
   margin-top: 12px;
-  margin-left: 24px;
   margin-bottom: 0;
   list-style-type: none;
   filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
@@ -723,7 +722,7 @@ body {
   }
 
   .header {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -733,17 +732,13 @@ body {
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
-    position: static;
-    margin: 0 0 0 10%;
-    padding: 18px 0;
   }
 
   .nav-button {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10% 0 0;
+    width: 50%;
   }
 
   .nav-button a {
@@ -764,10 +759,9 @@ body {
   .links-container {
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: static;
     padding: 0;
-    width: auto;
-    height: auto;
+    justify-self: center;
   }
 
   .active-menu {
@@ -923,11 +917,11 @@ body {
 
   .recent-works {
     flex-flow: column wrap;
-    margin: 0;
     height: 320px;
-    width: auto;
     gap: 17px;
     transition: 0.3s;
+    max-width: none;
+    align-items: flex-start;
   }
   
   .recent-works:hover {
@@ -940,6 +934,7 @@ body {
     line-height: 36px;
     height: auto;
     margin: 0;
+    order: -1;
   }
 
   .recent-works-description {
@@ -951,10 +946,12 @@ body {
     width: 42%;
     height: auto;
     margin: 0;
+    text-align: left;
   }
 
   .recent-works-button {
     margin: 0;
+    align-self: center;
   }
 
   .container-3 {
