@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,15 +10,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background: #1c1a19;
+  background: #14213d;
   background-image: url("images/Illustration.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 50%;
 }
 
 .header {
-  background: #3c3a39;
+  background: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,8 +32,8 @@ body {
 
 .logo {
   color: #fff;
-  font-family: 'Roboto', serif;
-  font-size: 18px;
+  font-family: 'Inter', serif;
+  font-size: 1.2rem;
   line-height: 24px;
   font-weight: 700;
   margin-left: 12px;
@@ -71,7 +74,7 @@ body {
   padding: 1rem;
   width: 100%;
   height: 100%;
-  background-color: #3c3a39;
+  background-color: #000;
   transition: 0.3s;
 }
 
@@ -84,7 +87,7 @@ body {
   text-decoration: none;
   font-family: 'Inter', serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +103,7 @@ body {
 }
 
 .primary-text {
-  color: #ff6b00;
+  color: #fca311;
   height: 124px;
   font-family: 'Crete Round', serif;
   font-size: 56px;
@@ -121,8 +124,6 @@ body {
 
 .description {
   color: #fff;
-  width: 327px;
-  height: 123px;
   font-family: 'Poppins', serif;
   font-size: 16px;
   line-height: 24px;
@@ -313,7 +314,7 @@ body {
   line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.75px;
-  background: #ff6b00;
+  background: #fca311;
   border-style: none;
   width: fit-content;
   height: auto;
@@ -323,12 +324,12 @@ body {
 
 .recent-works-button:hover {
   background-color: #f6e6cb;
-  color: #ff6b00;
-  border: 1px solid #ff6b00;
+  color: #fca311;
+  border: 1px solid #fca311;
 }
 
 .recent-works-button:active {
-  background-color: #ff6b00;
+  background-color: #fca311;
   color: #fff;
   border-style: none;
 }
@@ -407,7 +408,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 0.75px;
-  background: #ff6b00;
+  background: #fca311;
   border-style: none;
   padding: 1rem;
   text-align: center;
@@ -418,12 +419,12 @@ body {
 
 .card-works-button:hover {
   background-color: #f6e6cb;
-  color: #ff6b00;
-  border: 1px solid #ff6b00;
+  color: #fca311;
+  border: 1px solid #fca311;
 }
 
 .card-works-button:active {
-  background-color: #ff6b00;
+  background-color: #fca311;
   color: #fff;
   border-style: none;
 }
@@ -437,7 +438,7 @@ body {
 .container-3 {
   display: flex;
   flex-direction: column;
-  background-color: #1c1a19;
+  background-color: #14213d;
   margin-top: 120px;
 }
 
@@ -449,10 +450,11 @@ body {
   background-position: right center;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about-me-title {
-  color: #ff6b00;
+  color: #fca311;
   font-family: 'Crete Round', serif;
   font-size: 72px;
   letter-spacing: 0.37px;
@@ -469,7 +471,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  height: 148px;
 }
 
 .submit-btn {
@@ -479,11 +480,11 @@ body {
 
 .submit-btn:hover {
   background-color: #f6e6cb;
-  border: 1px solid #ff6b00;
+  border: 1px solid #fca311;
 }
 
 .submit-btn:active {
-  background-color: #ff6b00;
+  background-color: #fca311;
   color: #fff;
   border-style: none;
 }
@@ -513,7 +514,7 @@ body {
 }
 
 .submit-btn:hover a {
-  color: #ff6b00;
+  color: #fca311;
 }
 
 .submit-btn:active a {
@@ -659,7 +660,7 @@ body {
   letter-spacing: 0.75px;
   width: 131px;
   height: 48px;
-  background: #ff6b00;
+  background: #fca311;
   padding: 12px;
   border-style: none;
   position: relative;
@@ -668,12 +669,12 @@ body {
 
 .contact-us-button:hover {
   background-color: #f6e6cb;
-  color: #ff6b00;
-  border: 1px solid #ff6b00;
+  color: #fca311;
+  border: 1px solid #fca311;
 }
 
 .contact-us-button:active {
-  background-color: #ff6b00;
+  background-color: #fca311;
   color: #fff;
   border-style: none;
 }
@@ -718,6 +719,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     background-image: url("images/Illustration-header.png");
+    background-size: 50%;
   }
 
   .header {
@@ -728,7 +730,7 @@ body {
   .logo {
     color: #fff;
     font-family: 'Inter', serif;
-    font-size: 14px;
+    font-size: 1.2rem;
     line-height: 14px;
     font-weight: 700;
   }
@@ -743,7 +745,7 @@ body {
   .nav-button a {
     color: #fff;
     font-family: 'Inter', serif;
-    font-size: 10px;
+    font-size: 1rem;
     line-height: 17px;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -774,7 +776,7 @@ body {
   }
 
   .headline {
-    width: 420px;
+    width: 60vw;
     flex-wrap: wrap;
   }
 
@@ -813,7 +815,7 @@ body {
 
   .description {
     color: #f4f5f7;
-    width: 90%;
+    width: 80%;
     font-family: 'Inter', serif;
     font-size: 14px;
     line-height: 22px;
@@ -916,7 +918,7 @@ body {
 
   .recent-works {
     flex-flow: column wrap;
-    height: 320px;
+    height: 340px;
     gap: 17px;
     transition: 0.3s;
     max-width: none;
@@ -949,12 +951,10 @@ body {
   }
 
   .container-3 {
-    width: 100%;
-    height: auto;
-    background-color: #262626;
+    background-color: #14213d;
     background-image: url("images/Frame_desktop.png");
     background-repeat: no-repeat;
-    background-size: auto 30%;
+    background-size: 50%;
     background-position: 100% 10%;
     margin: 0;
   }
@@ -974,13 +974,12 @@ body {
 
   .about-me-description {
     margin: 0;
-    width: 396px;
-    height: auto;
+    width: 40vw;
   }
 
   .submit-btn {
     letter-spacing: 0.03em;
-    background: #f55800;
+    background: #fca311;
     padding: 0.8rem;
     font-size: 1rem;
     line-height: 17px;

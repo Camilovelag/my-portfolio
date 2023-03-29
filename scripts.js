@@ -57,12 +57,12 @@ menuContactUs.addEventListener('click', () => {
 const arr1 = [
   {
     id: 0,
-    popuptitle: 'Doctor Reservations Back-end',
-    popupdescription: 'Concise and well-documented API to manage doctors, logins, and reservations.',
-    popuptec: ['Ruby on Rails', 'PostgreSQL', 'Swagger'],
-    popupimg: './images/thumbnails/thumbnail-doctors-backend.jpg',
-    btnlive: 'https://doctors-reservations-rily.onrender.com/api-docs/index.html',
-    btnsource: 'https://github.com/Camilovelag/Doctors-Reservations-Backend',
+    popuptitle: 'API Pokemon Instagram',
+    popupdescription: 'Interactive Pokedex, with all the information for the 300 pokemon, their abilities, attributes, and more.',
+    popuptec: ['HTML5', 'CSS3', 'JavaScript'],
+    popupimg: './images/thumbnails/thumbnail-pokedex.jpg',
+    btnlive: 'https://sntgopl.github.io/API-Pokemon-Instagram/dist/',
+    btnsource: 'https://github.com/Camilovelag/API-Pokemon-Instagram',
   },
   {
     id: 1,
@@ -70,8 +70,8 @@ const arr1 = [
     popupdescription: 'A simple and handsome app to manage your budget with attractive UI and intuitive UX.',
     popuptec: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap'],
     popupimg: './images/thumbnails/thumbnail-awesome-budget.jpg',
-    btnlive: 'https://github.com/Camilovelag/my-awesome-budget-app',
-    btnsource: 'https://my-awesome-budget-app.onrender.com/',
+    btnlive: 'https://my-awesome-budget-app.onrender.com/',
+    btnsource: 'https://github.com/Camilovelag/my-awesome-budget-app',
   },
   {
     id: 2,
