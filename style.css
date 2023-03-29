@@ -914,7 +914,7 @@ body {
 
   .recent-works {
     flex-flow: column wrap;
-    height: 320px;
+    height: 340px;
     gap: 17px;
     transition: 0.3s;
     max-width: none;
@@ -970,7 +970,7 @@ body {
 
   .about-me-description {
     margin: 0;
-    width: 60vw;
+    width: 40vw;
   }
 
   .submit-btn {
