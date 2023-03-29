@@ -70,8 +70,8 @@ const arr1 = [
     popupdescription: 'A simple and handsome app to manage your budget with attractive UI and intuitive UX.',
     popuptec: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap'],
     popupimg: './images/thumbnails/thumbnail-awesome-budget.jpg',
-    btnlive: 'https://github.com/Camilovelag/my-awesome-budget-app',
-    btnsource: 'https://my-awesome-budget-app.onrender.com/',
+    btnlive: 'https://my-awesome-budget-app.onrender.com/',
+    btnsource: 'https://github.com/Camilovelag/my-awesome-budget-app',
   },
   {
     id: 2,
