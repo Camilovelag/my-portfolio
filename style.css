@@ -103,7 +103,7 @@ body {
 }
 
 .primary-text {
-  color: #fca311;
+  color: #c75300;
   height: 124px;
   font-family: 'Crete Round', serif;
   font-size: 56px;
@@ -314,7 +314,7 @@ body {
   line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.75px;
-  background: #fca311;
+  background: #c75300;
   border-style: none;
   width: fit-content;
   height: auto;
@@ -324,12 +324,12 @@ body {
 
 .recent-works-button:hover {
   background-color: #f6e6cb;
-  color: #fca311;
-  border: 1px solid #fca311;
+  color: #c75300;
+  border: 1px solid #c75300;
 }
 
 .recent-works-button:active {
-  background-color: #fca311;
+  background-color: #c75300;
   color: #fff;
   border-style: none;
 }
@@ -408,7 +408,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 0.75px;
-  background: #fca311;
+  background: #c75300;
   border-style: none;
   padding: 1rem;
   text-align: center;
@@ -419,12 +419,12 @@ body {
 
 .card-works-button:hover {
   background-color: #f6e6cb;
-  color: #fca311;
-  border: 1px solid #fca311;
+  color: #c75300;
+  border: 1px solid #c75300;
 }
 
 .card-works-button:active {
-  background-color: #fca311;
+  background-color: #c75300;
   color: #fff;
   border-style: none;
 }
@@ -454,7 +454,7 @@ body {
 }
 
 .about-me-title {
-  color: #fca311;
+  color: #c75300;
   font-family: 'Crete Round', serif;
   font-size: 72px;
   letter-spacing: 0.37px;
@@ -480,11 +480,11 @@ body {
 
 .submit-btn:hover {
   background-color: #f6e6cb;
-  border: 1px solid #fca311;
+  border: 1px solid #c75300;
 }
 
 .submit-btn:active {
-  background-color: #fca311;
+  background-color: #c75300;
   color: #fff;
   border-style: none;
 }
@@ -514,7 +514,7 @@ body {
 }
 
 .submit-btn:hover a {
-  color: #fca311;
+  color: #c75300;
 }
 
 .submit-btn:active a {
@@ -660,7 +660,7 @@ body {
   letter-spacing: 0.75px;
   width: 131px;
   height: 48px;
-  background: #fca311;
+  background: #c75300;
   padding: 12px;
   border-style: none;
   position: relative;
@@ -669,12 +669,12 @@ body {
 
 .contact-us-button:hover {
   background-color: #f6e6cb;
-  color: #fca311;
-  border: 1px solid #fca311;
+  color: #c75300;
+  border: 1px solid #c75300;
 }
 
 .contact-us-button:active {
-  background-color: #fca311;
+  background-color: #c75300;
   color: #fff;
   border-style: none;
 }
@@ -979,7 +979,7 @@ body {
 
   .submit-btn {
     letter-spacing: 0.03em;
-    background: #fca311;
+    background: #c75300;
     padding: 0.8rem;
     font-size: 1rem;
     line-height: 17px;
