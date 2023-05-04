@@ -57,12 +57,12 @@ menuContactUs.addEventListener('click', () => {
 const arr1 = [
   {
     id: 0,
-    popuptitle: 'API Pokemon Instagram',
-    popupdescription: 'Interactive Pokedex, with all the information for the 300 pokemon, their abilities, attributes, and more.',
-    popuptec: ['HTML5', 'CSS3', 'JavaScript'],
-    popupimg: './images/thumbnails/thumbnail-pokedex.jpg',
-    btnlive: 'https://sntgopl.github.io/API-Pokemon-Instagram/dist/',
-    btnsource: 'https://github.com/Camilovelag/API-Pokemon-Instagram',
+    popuptitle: 'Doctor Reservations Back-end',
+    popupdescription: 'Concise and well-documented API to manage doctors, logins, and reservations.',
+    popuptec: ['Ruby on Rails', 'PostgreSQL', 'Swagger'],
+    popupimg: './images/thumbnails/thumbnail-doctors-backend.jpg',
+    btnlive: 'https://autumn-wood-4029.fly.dev/api-docs/index.html',
+    btnsource: 'https://github.com/Camilovelag/Doctors-Reservations-Backend',
   },
   {
     id: 1,
@@ -82,6 +82,15 @@ const arr1 = [
     btnlive: 'https://camilovelag-awesome-recipes.netlify.app',
     btnsource: 'https://github.com/Camilovelag/awesome-recipes',
   },
+  {
+    id: 3,
+    popuptitle: 'Space Travelers&apos; Hub',
+    popupdescription: 'Single Page Application which displays lists of Rockets and Missions with information from the SpaceX API.',
+    popuptec: ['React', 'Redux', 'Bootstrap'],
+    popupimg: './images/thumbnails/thumbnail-rocket-list.jpg',
+    btnlive: 'https://my-space-travelers-hub.netlify.app/',
+    btnsource: 'https://github.com/Camilovelag/rocket-mission-list',
+  },
 ];
 
 document.getElementById('card-works-container').innerHTML = arr1.map((items) => `<div class="card-works" style="background-image: url('${items.popupimg}');">  
@@ -92,7 +101,7 @@ document.getElementById('card-works-container').innerHTML = arr1.map((items) => 
                 <li class="card-works-tech-items">${items.popuptec[1]}</li>
                 <li class="card-works-tech-items">${items.popuptec[2]}</li>
               </ul>
-                <a href="#popup" class="card-works-button project-2" id="project-${items.id}">See Project</a>
+                <a href="#popup" class="card-works-button project-${items.id}" id="project-${items.id}">See Project</a>
             </div>`).join('');
 
 // ---------------------------- OPEN POPUP WINDOW SECTION ----------------------------------
@@ -102,11 +111,8 @@ const proj1 = {
   popupdescription: 'Responsive and intuitive front-end app to manage doctors, logins, and reservations, which uses an API to manipulate and preserve data.',
   popuptec: ['React', 'Redux', 'Tailwind'],
   popupimg: './images/thumbnails/thumbnail-doctors-frontend.jpg',
-  btnlive: 'https://doctors-reservations.netlify.app/',
+  btnlive: 'https://doctor-reservations.netlify.app/',
   btnsource: 'https://github.com/Camilovelag/doctors-reservations-frontend',
-  btnName: 'btn4',
-  btnimg1: './pictures/TimeAndIcons/github.png',
-  btnimg2: './pictures/TimeAndIcons/github.png',
 };
 
 const btn4 = document.querySelector('#project-4');
@@ -168,6 +174,21 @@ btn2.addEventListener('click', () => {
   document.getElementById('popup-description').innerHTML = arr1[2].popupdescription;
   document.getElementById('popup-live').href = arr1[2].btnlive;
   document.getElementById('popup-source').href = arr1[2].btnsource;
+});
+
+const btn3 = document.querySelector('#project-3');
+const { 0: tech4a, 1: tech4b, 2: tech4c } = arr1[3].popuptec;
+
+btn3.addEventListener('click', () => {
+  popupOpen.classList.toggle('show-popup');
+  document.getElementById('popup-title').innerHTML = arr1[3].popuptitle;
+  document.getElementById('popup-techList1').innerHTML = tech4a;
+  document.getElementById('popup-techList2').innerHTML = tech4b;
+  document.getElementById('popup-techList3').innerHTML = tech4c;
+  document.getElementById('popup-img').src = arr1[3].popupimg;
+  document.getElementById('popup-description').innerHTML = arr1[3].popupdescription;
+  document.getElementById('popup-live').href = arr1[3].btnlive;
+  document.getElementById('popup-source').href = arr1[3].btnsource;
 });
 
 const closePopupWindow = document.querySelector('.close-popup');
